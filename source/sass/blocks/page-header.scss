@@ -1,0 +1,145 @@
+.page-header {
+  background-color: $bg-dark;
+  background-image: url(../../img/bg.png);
+  min-height: 850px;
+  color: $white;
+  padding: 0 50px;
+
+  &__wrapper {
+    max-width: 1410px;
+    margin: 0 auto;
+  }
+
+  &__nav-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 170px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    flex-grow: 1;
+
+    &-item {
+      margin-left: 20px;
+      padding: 10px;
+    }
+  }
+
+  &__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+  }
+
+  &__headline {
+    font-family: $roboto;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 94px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 25px;
+    padding-top: 50px;
+  }
+
+  &__desc {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    line-height: 34px;
+    font-size: 22px;
+    margin-left: 100px;
+    margin-bottom: 46px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 20px;
+      left: -100px;
+      width: 70px;
+      height: 2px;
+      background-color: #fff;
+    }
+  }
+
+  &__main-image {
+    margin-right: -70px;
+  }
+
+  &__action {
+    margin-left: 100px;
+  }
+
+  &__scroll-down {
+    display: inline-block;
+    transform: rotate(-90deg) translateY(-40px);
+    text-decoration: none;
+    color: $white;
+    opacity: 0.5;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__menu {
+    position: relative;
+    flex-grow: 1;
+    padding-left: 100px;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 37px;
+      height: 1px;
+      top: 5px;
+      background-color: $white;
+      box-shadow: 0 10px 0 0 $white;
+    }
+  }
+
+  &__link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: -30px;
+    }
+
+    &--tel::before {
+      width: 18px;
+      height: 18px;
+      background-image: url(../../img/phone-call.svg);
+    }
+
+    &--mail::before {
+      width: 19px;
+      height: 14px;
+      top: 2px;
+      background-image: url(../../img/mail.svg);
+    }
+
+    &--mail {
+      margin-right: 120px;
+    }
+  }
+}
+
+// @media (max-width: $tablet-width) {
+//   .page-header {
+//   }
+// }
+
+// @media (max-width: $mobile-width) {
+//   .page-header {
+//   }
+// }
