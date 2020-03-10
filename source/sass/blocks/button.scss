@@ -11,6 +11,8 @@
   font-size: 16px;
   line-height: 20px;
 
+  cursor: pointer;
+
   &--action {
     background-color: $bg-blue;
     color: #ffffff;
@@ -19,11 +21,12 @@
     white-space: nowrap;
     padding: 18px 50px;
 
+
     font-size: 16px;
     line-height: 19px;
 
     &:hover {
-      background-color: #ebebeb;
+      opacity: 0.9;
     }
 
     &:focus {
@@ -31,8 +34,7 @@
     }
 
     &:active {
-      background-color: #ebebeb;
-      // color: $greyish-30-brown;
+      opacity: 0.7;
     }
 
     @media (max-width: $tablet-width) {
@@ -46,16 +48,15 @@
     border: 1px solid #ffffff;
 
     &:hover {
-      background-color: #5eaa2f;
+      opacity: 0.9;
     }
 
     &:focus {
-      background-color: #5eaa2f;
+      opacity: 0.9;
     }
 
     &:active {
-      background-color: #5eaa2f;
-      color: $white-30-three;
+      opacity: 0.7;
     }
   }
 }
