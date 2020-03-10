@@ -27,6 +27,7 @@ input[type="radio"].visually-hidden {
 body {
   box-sizing: border-box;
   font-family: $mono;
+  overflow-x: hidden;
 }
 
 *,

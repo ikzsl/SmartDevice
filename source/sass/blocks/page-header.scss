@@ -4,6 +4,7 @@
   min-height: 850px;
   color: $white;
   padding: 0 50px;
+  
 
   &__wrapper {
     max-width: 1410px;
@@ -13,21 +14,107 @@
   &__nav-wrapper {
     display: flex;
     align-items: center;
+    padding-top: 33px;
     margin-bottom: 170px;
+
+    @media (max-width: $tablet-width) {
+      padding-top: 25px;
+    }
+
+    @media (max-width: $mobile-width) {
+      padding-top: 15px;
+    }
+
+
+  }
+
+  &__logo {
+    @media (max-width: $mobile-width) {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  &__logo-link {
+    align-self: flex-start;
   }
 
   &__nav {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: 10px;
+
     flex-grow: 1;
 
     &-item {
-      margin-left: 20px;
-      padding: 10px;
+      display: flex;
+      justify-content: flex-end;
+      // margin-left: 20px;
+      // padding: 10px;
+      align-self: center;
+      // min-width: 200px;
+      white-space: nowrap;
+      flex-grow: 0.1;
+
+      @media (max-width: $tablet-width) {
+        flex-grow: 0;
+         margin-left: 20px;
+      }
+
+      &-text {
+        margin-left: 10px;
+        @media (max-width: $tablet-width) {
+          // display: none;
+          position: absolute;
+          clip: rect(0 0 0 0);
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+        }
+      }
+    }
+  }
+
+  &__callback {
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &__pic {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+
+    &--tel {
+      width: 18px;
+      height: 18px;
+      background-image: url("../img/phone-call.svg");
+
+      @media (max-width: $tablet-width) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &--mail {
+      width: 19px;
+      height: 14px;
+      background-image: url("../img/mail.svg");
+
+      @media (max-width: $tablet-width) {
+        width: 26px;
+        height: 19px;
+      }
     }
   }
 
@@ -35,6 +122,7 @@
     display: flex;
     justify-content: space-between;
     // align-items: center;
+
   }
 
   &__headline {
@@ -47,6 +135,17 @@
     margin: 0;
     margin-bottom: 25px;
     padding-top: 50px;
+
+    @media (max-width: $tablet-width) {
+      font-size: 60px;
+      line-height: 70px;
+    }
+  }
+
+  &__desc-wrapper {
+    @media (max-width: $tablet-width) {
+      min-width: 420px;
+    }
   }
 
   &__desc {
@@ -61,20 +160,34 @@
     &::before {
       position: absolute;
       content: "";
-      top: 20px;
-      left: -100px;
-      width: 70px;
+      top: 15px;
+      left: -50px;
+      width: 33px;
       height: 2px;
       background-color: #ffffff;
+    }
+
+    @media (max-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 156%;
+      margin-left: 50px;
     }
   }
 
   &__main-image {
     margin-right: -70px;
+
+    @media (max-width: $tablet-width) {
+
+    }
   }
 
   &__action {
     margin-left: 100px;
+
+    @media (max-width: $tablet-width) {
+      margin-left: 50px;
+    }
   }
 
   &__scroll-down {
@@ -87,50 +200,27 @@
     line-height: 16px;
   }
 
-  &__menu {
-    position: relative;
-    flex-grow: 1;
-    padding-left: 100px;
-    cursor: pointer;
+  // &__menu {
+  //   position: relative;
+  //   flex-grow: 1;
+  //   padding-left: 100px;
+  //   cursor: pointer;
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 37px;
-      height: 1px;
-      top: 5px;
-      background-color: $white;
-      box-shadow: 0 10px 0 0 $white;
-    }
-  }
+  //   &::before {
+  //     position: absolute;
+  //     content: "";
+  //     width: 37px;
+  //     height: 1px;
+  //     top: 5px;
+  //     background-color: $white;
+  //     box-shadow: 0 10px 0 0 $white;
+  //   }
+  // }
 
   &__link {
     position: relative;
     text-decoration: none;
     color: inherit;
-
-    &::before {
-      position: absolute;
-      content: "";
-      left: -30px;
-    }
-
-    &--tel::before {
-      width: 18px;
-      height: 18px;
-      background-image: url("../../img/phone-call.svg");
-    }
-
-    &--mail::before {
-      width: 19px;
-      height: 14px;
-      top: 2px;
-      background-image: url("../../img/mail.svg");
-    }
-
-    &--mail {
-      margin-right: 120px;
-    }
   }
 }
 
