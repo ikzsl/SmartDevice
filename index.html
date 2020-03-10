@@ -14,17 +14,24 @@
     <div class="page-header__wrapper">
 
       <div class="page-header__nav-wrapper">
-        <a><img src="img/logo.png" width="202" height="52" alt="" class="page-header__logo"></a>
+        <a>
+          <picture>
+            <source media="(max-width: 320px)" srcset="img/logo-mobile.svg">
+            <img src="img/logo.png" width="202" height="52" alt="" class="page-header__logo">
+          </picture>
+
+        </a>
         <ul class="page-header__nav">
-          <li class="page-header__nav-item page-header__menu"><a href="#"></a></li>
+          <!-- <li class="page-header__nav-item page-header__menu"><a href="#"></a></li> -->
           <li class="page-header__nav-item">
             <div class="page-header__pic page-header__pic--mail"></div>
-            <a class="page-header__link page-header__link--mail" href="mailto:info@sd.ru">info@sd.ru</a>
+            <a class="page-header__link page-header__link--mail" href="mailto:info@sd.ru">
+              <span class="page-header__nav-item-text">info@sd.ru</span></a>
           </li>
           <li class="page-header__nav-item ">
             <a class="page-header__link page-header__link--tel" href="tel:+74950005252">
               <div class="page-header__pic page-header__pic--tel"></div>
-              <span>+7 (495) 000 52 52</span>
+              <span class="page-header__nav-item-text">+7 (495) 000 52 52</span>
             </a>
           </li>
           <li class="page-header__nav-item page-header__callback">
