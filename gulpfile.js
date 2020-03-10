@@ -1,5 +1,7 @@
 "use strict";
 
+var ghPages = require('gh-pages');
+var path = require('path');
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
@@ -97,6 +99,10 @@ gulp.task("copy", function () {
 
 gulp.task("clean", function () {
   return del("build");
+});
+
+gulp.task("deploy", function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
 });
 
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));

@@ -12,7 +12,6 @@
   line-height: 20px;
 
   &--action {
-   
     background-color: $bg-blue;
     color: #ffffff;
     letter-spacing: 0.05em;
@@ -38,7 +37,8 @@
 
   &--callback {
     border-color: #ffffff;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
+
     &:hover {
       background-color: #5eaa2f;
     }

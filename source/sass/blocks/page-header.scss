@@ -1,6 +1,6 @@
 .page-header {
   background-color: $bg-dark;
-  background-image: url(../../img/bg.png);
+  background-image: url("../../img/bg.png");
   min-height: 850px;
   color: $white;
   padding: 0 50px;
@@ -65,7 +65,7 @@
       left: -100px;
       width: 70px;
       height: 2px;
-      background-color: #fff;
+      background-color: #ffffff;
     }
   }
 
@@ -118,14 +118,14 @@
     &--tel::before {
       width: 18px;
       height: 18px;
-      background-image: url(../../img/phone-call.svg);
+      background-image: url("../../img/phone-call.svg");
     }
 
     &--mail::before {
       width: 19px;
       height: 14px;
       top: 2px;
-      background-image: url(../../img/mail.svg);
+      background-image: url("../../img/mail.svg");
     }
 
     &--mail {
