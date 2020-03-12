@@ -2,7 +2,10 @@
 @import "fonts";
 @import "vars";
 @import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";
 @import "blocks/button.scss";
+@import "blocks/social.scss";
+@import "blocks/links.scss";
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,

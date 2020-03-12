@@ -25,13 +25,14 @@
     font-size: 16px;
     line-height: 19px;
 
-    &:hover {
-      opacity: 0.9;
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      color: $bg-blue;
+      transition: background-color 0.2s ease;
     }
 
-    &:focus {
-      background-color: #ebebeb;
-    }
+
 
     &:active {
       opacity: 0.7;
@@ -47,12 +48,12 @@
     border-color: #ffffff;
     border: 1px solid #ffffff;
 
-    &:hover {
-      opacity: 0.9;
-    }
-
+    &:hover,
     &:focus {
-      opacity: 0.9;
+
+      background-color: $white;
+      color: $bg-dark;
+      transition: all 0.2s ease;
     }
 
     &:active {

@@ -1,16 +1,18 @@
 .page-header {
   background-color: $bg-dark;
-  background-image: url("../../img/bg.png");
+  background-image: url("../img/bg.png");
   min-height: 850px;
   color: $white;
   padding: 0 50px;
 
   @media (max-width: $tablet-width) {
     padding: 0 25px;
+    min-height: 686px;
   }
 
   @media (max-width: $mobile-width) {
     padding: 0 15px;
+    min-height: 650px;
   }
 
   &__wrapper {
@@ -53,13 +55,16 @@
     padding: 0;
     margin: 0;
     flex-grow: 1;
+    flex-wrap: wrap;
 
     &-item {
       display: flex;
       justify-content: flex-end;
       align-self: center;
+
       white-space: nowrap;
-      flex-grow: 0.1;
+      margin-left: 60px;
+
 
       @media (max-width: $tablet-width) {
         flex-grow: 0;
@@ -68,6 +73,7 @@
 
       &-text {
         margin-left: 10px;
+
         @media (max-width: $tablet-width) {
           // display: none;
           position: absolute;
@@ -149,12 +155,12 @@
       font-size: 40px;
       line-height: 47px;
       margin: 0;
+      padding: 0;
     }
   }
 
   &__desc-wrapper {
-    @media (max-width: $tablet-width) {
-    }
+    margin: 0;
 
     @media (max-width: $mobile-width) {
       // min-width: auto;
@@ -205,7 +211,8 @@
     }
 
     @media (max-width: $mobile-width) {
-      position: relative;
+      align-self: center;
+      margin: 0;
       left: 20px;
       width: 301px;
       height: 220px;
@@ -227,6 +234,7 @@
 
   &__action-text-desktop {
     display: inline;
+
     @media (max-width: $mobile-width) {
       display: none;
     }
@@ -254,27 +262,45 @@
     }
   }
 
-  // &__menu {
-  //   position: relative;
-  //   flex-grow: 1;
-  //   padding-left: 100px;
-  //   cursor: pointer;
+  &__menu {
+    position: relative;
+    flex-grow: 1;
+    padding-left: 100px;
+    cursor: pointer;
 
-  //   &::before {
-  //     position: absolute;
-  //     content: "";
-  //     width: 37px;
-  //     height: 1px;
-  //     top: 5px;
-  //     background-color: $white;
-  //     box-shadow: 0 10px 0 0 $white;
-  //   }
-  // }
+
+
+
+    @media (max-width: $tablet-width) {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 37px;
+        height: 1px;
+        top: -4px;
+        background-color: $white;
+        box-shadow: 0 10px 0 0 $white;
+      }
+    }
+  }
 
   &__link {
     position: relative;
     text-decoration: none;
     color: inherit;
+    padding: 10px;
+    border: 1px solid transparent;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $white;
+      border-radius: 5px;
+      transition: border-color 0.2s ease;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
   }
 }
 
