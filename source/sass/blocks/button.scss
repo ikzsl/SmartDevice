@@ -21,7 +21,6 @@
     white-space: nowrap;
     padding: 18px 50px;
 
-
     font-size: 16px;
     line-height: 19px;
 
@@ -32,14 +31,11 @@
       transition: background-color 0.2s ease;
     }
 
-
-
     &:active {
       opacity: 0.7;
     }
 
     @media (max-width: $tablet-width) {
-
       padding: 18px 15px;
     }
   }
@@ -50,7 +46,6 @@
 
     &:hover,
     &:focus {
-
       background-color: $white;
       color: $bg-dark;
       transition: all 0.2s ease;

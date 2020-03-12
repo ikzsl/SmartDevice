@@ -5,15 +5,22 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  height: 100px;
+
 
   // justify-content: center;
-  min-height: 30px;
+  @media (max-width: $tablet-width) {
+    height: auto;
+  }
 
   &__link {
     // display: inline;
+    text-decoration: none;
+    color: inherit;
   }
 
   &__item {
     // display: inline;
+    // padding-right: 65px;
   }
 }

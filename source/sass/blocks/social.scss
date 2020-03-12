@@ -3,24 +3,26 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
-  min-width: 130px;
+  justify-content: space-between;
+  // justify-content: center;
+  min-width: 112px;
   flex-wrap: wrap;
 }
 
 .social__link {
   & svg {
-    fill: #444444;
+    fill: red;
     vertical-align: middle;
   }
 
   &:hover svg,
   &:focus svg {
-    fill: $leaf;
+    fill: red;
+    opacity: 0.7;
   }
 
   &:active svg {
-    fill: $leaf;
+    fill: red;
     opacity: 0.3;
   }
 }
