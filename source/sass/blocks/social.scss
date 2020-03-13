@@ -11,38 +11,21 @@
 
 .social__link {
   & svg {
-    fill: red;
+    
+    fill: #cdcdcd;
     vertical-align: middle;
   }
 
   &:hover svg,
   &:focus svg {
-    fill: red;
+    fill: $bg-blue;  
     opacity: 0.7;
+    transition: fill 0.3s ease;
+    
   }
 
   &:active svg {
-    fill: red;
-    opacity: 0.3;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .social__link {
-    &--vk svg {
-      height: 16px;
-      width: 30px;
-    }
-
-    &--insta svg {
-      height: 23px;
-      width: 23px;
-    }
-
-    &--facebook svg {
-      height: 28px;
-      width: 14px;
-    }
+    opacity: 1;
   }
 }
 
