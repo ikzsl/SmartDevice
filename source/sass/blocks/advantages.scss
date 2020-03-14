@@ -1,14 +1,14 @@
 .advantages {
   display: flex;
   justify-content: center;
-  margin: 110px 0;
+  margin: 0;
+  margin-bottom: 110px;
 
   @media (max-width: $tablet-width) {
-    margin: 55px 0;     
+    margin-bottom: 60px;
   }
 
   @media (max-width: $mobile-width) {
-    margin: 40px 0;
   }
 
   &__list {
@@ -24,12 +24,12 @@
     min-height: 630px;
 
     @media (max-width: $tablet-width) {
-      height: auto;      
+      height: auto;
     }
 
     @media (max-width: $mobile-width) {
       flex-direction: column;
-      flex-wrap: nowrap;   
+      flex-wrap: nowrap;
     }
   }
 
@@ -38,25 +38,21 @@
     min-height: 300px;
     padding: 40px 45px;
     margin-bottom: 30px;
-
     border: 1px solid $gray-light;
     border-left: 3px solid $bg-blue;
 
     @media (max-width: $tablet-width) {
-      // min-height: 345px;
+      min-height: 305px;
       max-width: 345px;
       padding: 25px;
     }
 
-  
-
     &:nth-child(odd) {
       margin-right: 30px;
 
-      @media (max-width: $mobile-width) {        
-          margin-right: 0;        
+      @media (max-width: $mobile-width) {
+        margin-right: 0;
       }
-
     }
 
     &:hover,
