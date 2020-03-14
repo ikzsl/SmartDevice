@@ -1,0 +1,145 @@
+.products {
+  //   border: 1px solid red;
+  background-color: $bg-dark;
+  padding: 93px 150px;
+  padding-bottom: 130px;
+
+  //   margin: 0 150px;
+
+  @media (max-width: $tablet-width) {
+    padding: 53px 25px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 53 20px;
+    padding-bottom: 65px;
+  }
+
+  &__wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  &__headline {
+    margin: 0;
+    margin-bottom: 45px;
+    font-family: $roboto;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+    color: $white;
+
+    @media (max-width: $tablet-width) {
+      font-size: 32px;
+      line-height: 45px;
+    }
+
+    @media (max-width: $mobile-width) {
+      font-size: 28px;
+      line-height: 39px;
+    }
+  }
+
+  &__list {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+
+    @media (max-width: $tablet-width) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $mobile-width) {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: 31%;
+    height: 620px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;      
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 63px;
+      height: 63px;
+      bottom: 0;
+      right: 0;
+      background-color: $bg-blue;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 10px;
+      bottom: 26px;
+      right: 27px;
+      border: 1px solid $white;
+      transform: rotate(45deg);
+      border-left: none;
+      border-bottom: none;
+    }
+
+    @media (max-width: $tablet-width) {
+      width: 100%;
+      height: 256px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: $mobile-width) {
+      height: 256px;
+    }
+
+    &--produce {
+      background-image: url("../img/produce.png");
+    }
+
+    &--mounting {
+      background-image: url("../img/mounting.png");
+    }
+
+    &--accessories {
+      background-image: url("../img/accessories.png");
+    }
+  }
+
+  &__link {
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: $white;
+    position: relative;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__link-text {
+    display: block;
+    margin: 45px;
+    max-width: 170px;
+
+    font-family: $roboto;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
