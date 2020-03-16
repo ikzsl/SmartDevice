@@ -7,100 +7,100 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 60px;
   }
+}
 
-  &__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1170px;
-    min-height: 630px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  min-height: 630px;
 
-    @media (max-width: $tablet-width) {
-      height: auto;
-    }
+  @media (max-width: $tablet-width) {
+    height: auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+.advantages__item {
+  max-width: 570px;
+  min-height: 300px;
+  padding: 40px 45px;
+  margin-bottom: 30px;
+  border: 1px solid $gray-light;
+  border-left: 3px solid $bg-blue;
+
+  transition: all 0.2s ease-in;
+
+  @media (max-width: $tablet-width) {
+    min-height: 305px;
+    max-width: 345px;
+    padding: 25px;
+  }
+
+  &:nth-child(odd) {
+    margin-right: 30px;
 
     @media (max-width: $mobile-width) {
-      flex-direction: column;
-      flex-wrap: nowrap;
+      margin-right: 0;
     }
   }
 
-  &__item {
-    max-width: 570px;
-    min-height: 300px;
-    padding: 40px 45px;
-    margin-bottom: 30px;
-    border: 1px solid $gray-light;
-    border-left: 3px solid $bg-blue;
+  &:hover,
+  &:focus {
+    background-color: $bg-blue;
+    border-color: $bg-blue;
+    color: white;
 
-    transition: all 0.2s ease-in;
+    cursor: pointer;
 
-    @media (max-width: $tablet-width) {
-      min-height: 305px;
-      max-width: 345px;
-      padding: 25px;
+    & svg {
+      fill: white;
     }
 
-    &:nth-child(odd) {
-      margin-right: 30px;
-
-      @media (max-width: $mobile-width) {
-        margin-right: 0;
-      }
-    }
-
-    &:hover,
-    &:focus {
-      background-color: $bg-blue;
-      border-color: $bg-blue;
+    .advantages__item-headline {
       color: white;
-     
-      cursor: pointer;
+    }
 
-      & svg {
-        fill: white;
-      }
-
-      .advantages__item-headline {
-        color: white;
-      }
-
-      .advantages__item-description {
-        color: white;
-      }
+    .advantages__item-description {
+      color: white;
     }
   }
+}
 
-  &__item-icon {
-    fill: $bg-blue;
-    margin: 0;
-    margin-bottom: 23px;
-    padding: 0;
-  }
+.advantages__item-icon {
+  fill: $bg-blue;
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
+}
 
-  &__item-headline {
-    margin: 0;
-    margin-bottom: 15px;
-    padding: 0;
+.advantages__item-headline {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
 
-    color: $bg-blue;
-    font-family: $roboto;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 34px;
-  }
+  color: $bg-blue;
+  font-family: $roboto;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+}
 
-  &__item-description {
-    margin: 0;
-    padding: 0;
+.advantages__item-description {
+  margin: 0;
+  padding: 0;
 
-    color: #666666;
-    font-size: 16px;
-    line-height: 22px;
-  }
+  color: #666666;
+  font-size: 16px;
+  line-height: 22px;
 }

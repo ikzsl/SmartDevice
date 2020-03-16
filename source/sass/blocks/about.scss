@@ -14,68 +14,68 @@
     padding: 0 20px;
     padding-bottom: 65px;
   }
+}
 
-  &__wrapper {
-    display: flex;
-    max-width: 1170px;
-    margin: 0 auto;
+.about__wrapper {
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.about__year {
+  min-width: 170px;
+  height: 220px;
+  background-image: url("../img/2005.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  // border: 1px solid red;
+
+  @media (max-width: $tablet-width) {
+    min-width: 180px;
+    height: 240px;
   }
 
-  &__year {
-    min-width: 170px;
-    height: 220px;
-    background-image: url("../img/2005.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    // border: 1px solid red;
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
 
-    @media (max-width: $tablet-width) {
-      min-width: 180px;
-      height: 240px;
-    }
+.about__headline {
+  margin: 0;
+  margin-bottom: 20px;
 
-    @media (max-width: $mobile-width) {
-      display: none;
-    }
+  font-size: 36px;
+  line-height: 50px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 45px;
   }
 
-  &__headline {
-    margin: 0;
+  @media (max-width: $mobile-width) {
     margin-bottom: 20px;
-
-    font-size: 36px;
-    line-height: 50px;
-
-    @media (max-width: $tablet-width) {
-      margin-bottom: 25px;
-      font-size: 32px;
-      line-height: 45px;
-    }
-
-    @media (max-width: $mobile-width) {
-      margin-bottom: 20px;
-      font-size: 28px;
-      line-height: 40px;
-    }
+    font-size: 28px;
+    line-height: 40px;
   }
+}
 
-  &__description {
-    margin: 0;
-    margin-bottom: 20px;
+.about__description {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 21px;
+
+  @media (max-width: $tablet-width) {
     font-size: 16px;
-    line-height: 21px;
-
-    @media (max-width: $tablet-width) {
-      font-size: 16px;
-      line-height: 20px;
-    }
-
-    @media (max-width: $mobile-width) {
-      margin-bottom: 40px;
-    }
+    line-height: 20px;
   }
 
-  &__button {
-    margin-top: 15px;
+  @media (max-width: $mobile-width) {
+    margin-bottom: 40px;
   }
+}
+
+.about__button {
+  margin-top: 15px;
 }

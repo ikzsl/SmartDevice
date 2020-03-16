@@ -7,20 +7,12 @@
   flex-wrap: wrap;
   height: 100px;
 
-
-  // justify-content: center;
   @media (max-width: $tablet-width) {
     height: auto;
   }
+}
 
-  &__link {
-    // display: inline;
-    text-decoration: none;
-    color: inherit;
-  }
-
-  &__item {
-    // display: inline;
-    // padding-right: 65px;
-  }
+.links__link {
+  text-decoration: none;
+  color: inherit;
 }
