@@ -53,12 +53,12 @@
 
   <main class="page-main">
 
-    <section  class="promo">
+    <section class="promo">
       <div class="promo__content-wrapper">
         <div class="promo__desc-wrapper">
           <h1 class="promo__headline">Печатные платы</h1>
           <p class="promo__desc">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="promo__action button button--action">
+          <a class="promo__action button button--action" href="#feedback-form">
             <span class="promo__action-text-desktop"> Получить бесплатную консультацию </span>
             <span class="promo__action-text-mobile"> Бесплатная консультация </span>
           </a>
@@ -69,13 +69,13 @@
       </div>
 
 
-      <a href="#" class="promo__scroll-down">Скролл вниз</a>
+      <a href="#advantages" class="promo__scroll-down">Скролл вниз</a>
 
     </section>
 
 
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
 
       <ul class="advantages__list">
         <li class="advantages__item">
@@ -177,7 +177,7 @@
         <div class="feedback__container">
           <h2 class="feedback__headline">Остались вопросы? Задайте их нам!</h2>
           <p class="feedback__description">Мы проконсультируем Вас бесплатно</p>
-          <form class="feedback__form form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+          <form class="feedback__form form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST" id="feedback-form">
 
             <div class="form__container">
               <input type="text" name="name" id="name" placeholder="Имя" class="form__text-input" required>
