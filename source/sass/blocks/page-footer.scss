@@ -134,6 +134,8 @@
 }
 
 .page-footer__logo-link {
+  margin-bottom: 30px;
+
   @media (max-width: $mobile-width) {
     margin-bottom: 26px;
   }
