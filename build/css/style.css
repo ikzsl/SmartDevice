@@ -1003,13 +1003,13 @@ body {
     padding: 18px 50px;
     font-size: 16px;
     line-height: 19px;
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
 }
 
 .button--action:hover, .button--action:focus {
     background-color: #ffffff;
     color: #00b2ff;
-    -webkit-transition: background-color 0.2s ease;
-    transition: background-color 0.2s ease;
 }
 
 .button--action:active {
@@ -1031,8 +1031,6 @@ body {
 .button--callback:hover, .button--callback:focus {
     background-color: #ffffff;
     color: #1b2d37;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
 }
 
 .button--callback:active {
@@ -1046,13 +1044,13 @@ body {
     font-size: 14px;
     line-height: 16px;
     min-width: 180px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .button--about:hover, .button--about:focus {
     background-color: #00b2ff;
     color: #ffffff;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
 }
 
 .button--about:active {
@@ -1065,13 +1063,13 @@ body {
     color: #ffffff;
     font-size: 14px;
     line-height: 16px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .button--submit:hover, .button--submit:focus {
     background-color: #ffffff;
     color: #00b2ff;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
 }
 
 .button--submit:active {
@@ -1096,14 +1094,14 @@ body {
 .social__link svg {
     fill: #cdcdcd;
     vertical-align: middle;
+    -webkit-transition: fill 0.3s ease;
+    transition: fill 0.3s ease;
 }
 
 .social__link:hover svg,
 .social__link:focus svg {
     fill: #00b2ff;
     opacity: 0.7;
-    -webkit-transition: fill 0.3s ease;
-    transition: fill 0.3s ease;
 }
 
 .social__link:active svg {
@@ -1201,6 +1199,8 @@ body {
     margin-bottom: 30px;
     border: 1px solid #ebebeb;
     border-left: 3px solid #00b2ff;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 @media (max-width: 1023px) {
@@ -1225,8 +1225,6 @@ body {
     background-color: #00b2ff;
     border-color: #00b2ff;
     color: white;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
     cursor: pointer;
 }
 
@@ -1454,12 +1452,12 @@ body {
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .products__item:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
 }
 
 .products__item::before {
