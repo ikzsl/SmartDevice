@@ -36,6 +36,7 @@
       height: 480px;
       background-image: url("../../img/paper_airplane.png");
       background-size: cover;
+      z-index: 0;
 
       @media (max-width: $tablet-width) {
         display: none;
