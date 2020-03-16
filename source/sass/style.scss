@@ -1,6 +1,8 @@
 @import "normalize";
 @import "fonts";
 @import "vars";
+@import "mixins";
+@import "base";
 @import "blocks/page-header.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/button.scss";
@@ -15,14 +17,3 @@
 @import "blocks/popup-layer.scss";
 @import "blocks/visually-hidden.scss";
 
-body {
-  box-sizing: border-box;
-  font-family: $mono;
-  overflow-x: hidden;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}

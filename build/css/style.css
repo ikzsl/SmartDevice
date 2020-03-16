@@ -331,6 +331,20 @@ template, [hidden] {
   src: url("../fonts/roboto-condensed.woff2") format("woff2"), url("../fonts/roboto-condensed.woff") format("woff");
 }
 
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "PT-Mono", "Arial", sans-serif;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
 .page-header {
     background-color: #1b2d37;
     background-image: url("../img/bg.png");
@@ -1871,18 +1885,4 @@ template, [hidden] {
     border: 0;
     -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
-}
-
-body {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: "PT-Mono", "Arial", sans-serif;
-    overflow-x: hidden;
-}
-
-*,
-*::before,
-*::after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
 }
