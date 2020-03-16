@@ -888,6 +888,10 @@ body {
     }
 }
 
+.page-footer__logo-link {
+    margin-bottom: 30px;
+}
+
 @media (max-width: 767px) {
     .page-footer__logo-link {
         margin-bottom: 26px;
@@ -1026,6 +1030,11 @@ body {
     border-color: #ffffff;
     border: 1px solid #ffffff;
     color: #ffffff;
+    font-family: "roboto-condensed", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
 }
 
 .button--callback:hover, .button--callback:focus {
@@ -1043,6 +1052,8 @@ body {
     color: #00b2ff;
     font-size: 14px;
     line-height: 16px;
+    font-weight: normal;
+    letter-spacing: 0.05em;
     min-width: 180px;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
@@ -1317,6 +1328,9 @@ body {
 .about__headline {
     margin: 0;
     margin-bottom: 20px;
+    font-family: "roboto-condensed", "Arial", sans-serif;
+    font-weight: normal;
+    color: #666666;
     font-size: 36px;
     line-height: 50px;
 }
