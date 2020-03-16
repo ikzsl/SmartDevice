@@ -13,13 +13,13 @@
   & svg {
     fill: #cdcdcd;
     vertical-align: middle;
+    transition: fill 0.3s ease;
   }
 
   &:hover svg,
   &:focus svg {
     fill: $bg-blue;
     opacity: 0.7;
-    transition: fill 0.3s ease;
   }
 
   &:active svg {

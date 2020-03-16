@@ -38,6 +38,8 @@
     border: 1px solid $gray-light;
     border-left: 3px solid $bg-blue;
 
+    transition: all 0.2s ease-in;
+
     @media (max-width: $tablet-width) {
       min-height: 305px;
       max-width: 345px;
@@ -57,7 +59,7 @@
       background-color: $bg-blue;
       border-color: $bg-blue;
       color: white;
-      transition: all 0.2s ease-in;
+     
       cursor: pointer;
 
       & svg {

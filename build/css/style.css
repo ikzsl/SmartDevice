@@ -692,14 +692,12 @@ body {
     text-decoration: none;
     color: inherit;
     padding: 10px;
-    border: 1px solid transparent;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .page-header__link:hover, .page-header__link:focus {
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    -webkit-transition: border-color 0.2s ease;
-    transition: border-color 0.2s ease;
+    color: #e5e5e5;
 }
 
 .page-header__link:hover svg, .page-header__link:focus svg {
