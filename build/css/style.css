@@ -331,6 +331,10 @@ template, [hidden] {
   src: url("../fonts/roboto-condensed.woff2") format("woff2"), url("../fonts/roboto-condensed.woff") format("woff");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1174,11 +1178,19 @@ body {
     justify-content: center;
     margin: 0;
     margin-bottom: 110px;
+    padding: 0 150px;
 }
 
 @media (max-width: 1023px) {
     .advantages {
         margin-bottom: 60px;
+        padding: 0 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .advantages {
+        padding: 0 20px;
     }
 }
 
@@ -1189,9 +1201,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1219,7 +1231,7 @@ body {
 }
 
 .advantages__item {
-    max-width: 570px;
+    width: 49%;
     min-height: 300px;
     padding: 40px 45px;
     margin-bottom: 30px;
@@ -1232,18 +1244,13 @@ body {
 @media (max-width: 1023px) {
     .advantages__item {
         min-height: 305px;
-        max-width: 345px;
         padding: 25px;
     }
 }
 
-.advantages__item:nth-child(odd) {
-    margin-right: 30px;
-}
-
 @media (max-width: 767px) {
-    .advantages__item:nth-child(odd) {
-        margin-right: 0;
+    .advantages__item {
+        width: 100%;
     }
 }
 

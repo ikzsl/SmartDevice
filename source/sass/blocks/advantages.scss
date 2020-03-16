@@ -3,9 +3,15 @@
   justify-content: center;
   margin: 0;
   margin-bottom: 110px;
+  padding: 0 150px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 60px;
+    padding: 0 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 20px;
   }
 }
 
@@ -15,7 +21,7 @@
   padding: 0;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   max-width: 1170px;
@@ -32,7 +38,7 @@
 }
 
 .advantages__item {
-  max-width: 570px;
+  width: 49%;
   min-height: 300px;
   padding: 40px 45px;
   margin-bottom: 30px;
@@ -43,16 +49,11 @@
 
   @media (max-width: $tablet-width) {
     min-height: 305px;
-    max-width: 345px;
     padding: 25px;
   }
 
-  &:nth-child(odd) {
-    margin-right: 30px;
-
-    @media (max-width: $mobile-width) {
-      margin-right: 0;
-    }
+  @media (max-width: $mobile-width) {
+    width: 100%;
   }
 
   &:hover,

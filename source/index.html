@@ -76,7 +76,7 @@
 
 
     <section class="advantages" id="advantages">
-
+      <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
           <svg class="advantages__item-icon" width="29" height="35" viewBox="0 0 29 35">
@@ -177,25 +177,26 @@
         <div class="feedback__container">
           <h2 class="feedback__headline">Остались вопросы? Задайте их нам!</h2>
           <p class="feedback__description">Мы проконсультируем Вас бесплатно</p>
-          <form class="feedback__form form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST" id="feedback-form">
+          <form class="feedback__form form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST"
+            id="feedback-form">
 
             <div class="form__container">
-              <input type="text" name="name" id="name" placeholder="Имя" class="form__text-input" required>
               <label class="visually-hidden" for="name">Введите имя</label>
-              <input type="tel" name="tel" id="tel" placeholder="Телефон" class="form__text-input" required>
+              <input type="text" name="name" id="name" placeholder="Имя" class="form__text-input" required>
               <label class="visually-hidden" for="tel">Введите номер телефона</label>
+              <input type="tel" name="tel" id="tel" placeholder="Телефон" class="form__text-input" required>
             </div>
 
-            <textarea name="text" rows="4" id="message" placeholder="Ваш вопрос" class="form__text-area"
-              required></textarea>
             <label class="visually-hidden" for="message">Введите ваш вопрос</label>
+            <textarea name="text" rows="4" id="message" placeholder="Ваш вопрос" class="form__text-area" required>
+            </textarea>
 
             <div class="form__submit-container">
               <button type="submit" class="form__submit button button--submit">Задать вопрос</button>
 
               <div class="form__agree-container">
-                <input type="checkbox" name="agree" id="agree" class="form__agree" required>
                 <label class="form__agree-label">Я согласен на обработку персональных данных</label>
+                <input type="checkbox" name="agree" id="agree" class="form__agree" required>
               </div>
             </div>
           </form>
@@ -310,22 +311,21 @@
         <form class="modal-feedback__form form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
 
           <div class="form__container">
-            <input type="text" name="name" id="name" placeholder="Имя" class="form__text-input" required>
             <label class="visually-hidden" for="name">Введите имя</label>
-            <input type="tel" name="tel" id="tel" placeholder="Телефон" class="form__text-input" required>
+            <input type="text" name="name" id="name" placeholder="Имя" class="form__text-input" required>
             <label class="visually-hidden" for="tel">Введите номер телефона</label>
-          </div>
+            <input type="tel" name="tel" id="tel" placeholder="Телефон" class="form__text-input" required>
 
+          </div>
+          <label class="visually-hidden" for="message">Введите ваш вопрос</label>
           <textarea name="text" rows="4" id="message" placeholder="Ваш вопрос" class="form__text-area"
             required></textarea>
-          <label class="visually-hidden" for="message">Введите ваш вопрос</label>
 
           <div class="form__submit-container form__submit-container--modal">
             <button type="submit" class="form__submit form__submit--modal button button--submit">Отправить</button>
-
             <div class="form__agree-container form__agree-container--modal">
-              <input type="checkbox" name="agree" id="agree" class="form__agree" required>
               <label class="form__agree-label">Я согласен на обработку персональных данных</label>
+              <input type="checkbox" name="agree" id="agree" class="form__agree" required>
             </div>
           </div>
         </form>
