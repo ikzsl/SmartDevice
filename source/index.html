@@ -59,7 +59,7 @@
         </div>
 
 
-        <img src="img/pcb.png" width="705" height="515" alt="" class="page-header__main-image">
+        <img src="img/pcb.webp" width="705" height="515" alt="" class="page-header__main-image">
       </div>
 
 
@@ -92,11 +92,8 @@
           <p class="advantages__item-description">Нашими поставщиками являются такие крупные мировые компании как:
             OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей
             продукции.
-
           </p>
-
         </li>
-
 
         <li class="advantages__item">
           <svg class="advantages__item-icon" width="35" height="35" viewBox="0 0 35 35">
@@ -106,13 +103,7 @@
           <p class="advantages__item-description">По желанию клиента мы обеспечиваем полную конфеденциальность.
           </p>
 
-
         </li>
-
-
-
-
-
         <li class="advantages__item">
           <svg class="advantages__item-icon" width="35" height="35" viewBox="0 0 35 35">
             <use xlink:href="#icon-tag"></use>
@@ -155,19 +146,11 @@
 
         <ul class="products__list">
 
-
-
           <li class="products__item products__item--produce">
-
             <a href="#" class="products__link">
               <span class="products__link-text">Производство печатных плат</span>
             </a>
-
-
-
           </li>
-
-
 
           <li class="products__item products__item--mounting">
             <a href="#" class="products__link">
@@ -182,8 +165,37 @@
 
     </section>
 
-    <section class="form">
+    <section class="feedback">
+      <div class="feedback__wrapper">
+        <div class="feedback__img-container">
+        </div>
+        <div class="feedback__container">
+          <h2 class="feedback__headline">Остались вопросы? Задайте их нам!</h2>
+          <p class="feedback__description">Мы проконсультируем Вас бесплатно</p>
+          <form class="feedback__form form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
 
+            <div class="form__container">
+              <input type="text" name="name" id="name" placeholder="Имя" class="form__text-input" required>
+              <label class="visually-hidden" for="name">Введите имя</label>
+              <input type="tel" name="tel" id="tel" placeholder="Телефон" class="form__text-input" required>
+              <label class="visually-hidden" for="tel">Введите номер телефона</label>
+            </div>
+
+            <textarea name="text" rows="4" id="message" placeholder="Ваш вопрос" class="form__text-area"
+              required></textarea>
+            <label class="visually-hidden" for="message">Введите ваш вопрос</label>
+
+            <div class="form__submit-container">
+              <button type="submit" class="form__submit button button--submit">Задать вопрос</button>
+
+              <div class="form__agree-container">
+                <input type="checkbox" name="agree" id="agree" class="form__agree" required>
+                <label class="form__agree-label">Я согласен на обработку персональных данных</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
 
   </main>
@@ -283,6 +295,42 @@
     </div>
 
   </footer>
+
+  <section class="modal-feedback modal-feedback--off">
+
+    <div class="modal-feedback__wrapper">
+      <div class="modal-feedback__container">
+        <h2 class="modal-feedback__headline">Закажите звонок</h2>
+        <p class="modal-feedback__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form class="modal-feedback__form form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+
+          <div class="form__container">
+            <input type="text" name="name" id="name" placeholder="Имя" class="form__text-input" required>
+            <label class="visually-hidden" for="name">Введите имя</label>
+            <input type="tel" name="tel" id="tel" placeholder="Телефон" class="form__text-input" required>
+            <label class="visually-hidden" for="tel">Введите номер телефона</label>
+          </div>
+
+          <textarea name="text" rows="4" id="message" placeholder="Ваш вопрос" class="form__text-area"
+            required></textarea>
+          <label class="visually-hidden" for="message">Введите ваш вопрос</label>
+
+          <div class="form__submit-container form__submit-container--modal">
+            <button type="submit" class="form__submit form__submit--modal button button--submit">Отправить</button>
+
+            <div class="form__agree-container form__agree-container--modal">
+              <input type="checkbox" name="agree" id="agree" class="form__agree" required>
+              <label class="form__agree-label">Я согласен на обработку персональных данных</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <button type="button" class="modal-feedback__close">Закрыть</button>
+  </section>
+  <div class="popup-layer popup-layer--off"></div>
+
+
 
   <script src="js/script.js"></script>
 </body>

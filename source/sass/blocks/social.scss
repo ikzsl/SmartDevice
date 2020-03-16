@@ -11,17 +11,15 @@
 
 .social__link {
   & svg {
-    
     fill: #cdcdcd;
     vertical-align: middle;
   }
 
   &:hover svg,
   &:focus svg {
-    fill: $bg-blue;  
+    fill: $bg-blue;
     opacity: 0.7;
     transition: fill 0.3s ease;
-    
   }
 
   &:active svg {
