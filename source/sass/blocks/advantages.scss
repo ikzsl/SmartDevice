@@ -78,14 +78,14 @@
   }
 }
 
-.advantages__item-icon {
+.advantages__item svg {
   fill: $bg-blue;
   margin: 0;
   margin-bottom: 23px;
   padding: 0;
 }
 
-.advantages__item-headline {
+.advantages__item h3{
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
@@ -97,7 +97,7 @@
   line-height: 34px;
 }
 
-.advantages__item-description {
+.advantages__item p {
   margin: 0;
   padding: 0;
 

@@ -49,18 +49,7 @@
   }
 }
 
-.feedback__img-container {
-  width: 50%;
-  height: 200px;
-  margin-left: -100px;
-  margin-right: 100px;
-
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.feedback__headline {
+.feedback__container h2 {
   margin: 0;
   font-size: 36px;
   line-height: 51px;
@@ -78,9 +67,20 @@
   }
 }
 
-.feedback__description {
+.feedback__container p {
   margin: 0;
   margin-bottom: 50px;
   font-size: 16px;
   line-height: 22px;
+}
+
+.feedback__img-container {
+  width: 50%;
+  height: 200px;
+  margin-left: -100px;
+  margin-right: 100px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }

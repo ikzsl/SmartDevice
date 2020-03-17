@@ -1,4 +1,14 @@
 'use strict';
+
+// console.log(IMask);
+// var phoneMask = IMask(
+//   document.getElementById('phone-mask'), {
+//   mask: '+{7}(000)000-00-00'
+// });
+
+// console.log(phoneMask(826384768237));
+
+
 var modalWindow = document.querySelector('.modal-feedback');
 var modalCloseButton = document.querySelector('.modal-feedback__close');
 var callbackButton = document.querySelector('.button--callback');
