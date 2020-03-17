@@ -360,7 +360,6 @@ body {
     .page-header {
         padding: 0 25px;
         margin-bottom: 55px;
-        min-height: 686px;
     }
 }
 
@@ -368,7 +367,6 @@ body {
     .page-header {
         padding: 0 15px;
         margin-bottom: 40px;
-        min-height: 650px;
     }
 }
 
