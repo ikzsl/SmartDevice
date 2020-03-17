@@ -55,17 +55,17 @@
     <div class="page-header__wrapper">
 
       <div class="page-header__nav-wrapper">
-        <a tabindex="1" class="page-header__logo-link">
+        <a class="page-header__logo-link">
           <picture>
             <source media="(max-width: 768px)" srcset="img/logo-mobile.svg">
-            <img src="img/logo.png" width="202" height="52" alt="" class="page-header__logo">
+            <img src="img/logo.svg" width="202" height="52" alt="Логотип Smart Device" class="page-header__logo">
           </picture>
 
         </a>
         <ul class="page-header__nav">
-          <li class="page-header__nav-item page-header__menu"><a href="#"></a></li>
+          <li class="page-header__nav-item page-header__menu"><button class="visually-hidden">Меню</button></li>
           <li class="page-header__nav-item">
-            <a tabindex="2" class="page-header__link page-header__link--mail" href="mailto:info@sd.ru">
+            <a class="page-header__link page-header__link--mail" href="mailto:info@sd.ru">
               <svg class="page-header__pic" width="19" height="18" viewBox="0 0 27 26">
                 <use xlink:href="#icon-mail"></use>
               </svg>
@@ -73,7 +73,7 @@
             </a>
           </li>
           <li class="page-header__nav-item ">
-            <a tabindex="3" class="page-header__link page-header__link--tel" href="tel:+74950005252">
+            <a class="page-header__link page-header__link--tel" href="tel:+74950005252">
               <svg class="page-header__pic" width="18" height="18" viewBox="0 0 27 26">
                 <use xlink:href="#icon-phone"></use>
               </svg>
@@ -81,73 +81,78 @@
             </a>
           </li>
           <li class="page-header__nav-item page-header__callback">
-            <a tabindex="4" class="page-header__link button button--callback">Заказать звонок</a>
+            <a class="page-header__link button button--callback" href="#">Заказать звонок</a>
           </li>
         </ul>
 
       </div>
-      <div class="page-header__content-wrapper">
-        <div class="page-header__desc-wrapper">
-          <h1 class="page-header__headline">Печатные платы</h1>
-          <p class="page-header__desc">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a tabindex="5" class="page-header__action button button--action">
-            <span class="page-header__action-text-desktop"> Получить бесплатную консультацию </span>
-            <span class="page-header__action-text-mobile"> Бесплатная консультация </span>
+
+  </div></header>
+
+  <main class="page-main">
+
+    <section class="promo">
+      <div class="promo__content-wrapper">
+        <div class="promo__desc-wrapper">
+          <h1 class="promo__headline">Печатные платы</h1>
+          <p class="promo__desc">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a class="promo__action button button--action" href="#feedback-form">
+            <span class="promo__action-text-desktop"> Получить бесплатную консультацию </span>
+            <span class="promo__action-text-mobile"> Бесплатная консультация </span>
           </a>
         </div>
 
 
-        <img src="img/pcb.webp" width="705" height="515" alt="" class="page-header__main-image">
+        <img src="img/pcb.webp" width="705" height="515" alt="Изображение печатной платы" class="promo__main-image">
       </div>
 
 
-      <a tabindex="6" href="#" class="page-header__scroll-down">Скролл вниз</a>
+      <a href="#advantages" class="promo__scroll-down">Скролл вниз</a>
 
-    </div>
-  </header>
+    </section>
 
-  <main class="page-main">
 
-    <section class="advantages">
 
+    <section class="advantages" id="advantages">
+      <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
-          <svg class="advantages__item-icon" width="29" height="35" viewBox="0 0 29 35">
+          <svg width="29" height="35" viewBox="0 0 29 35">
             <use xlink:href="#icon-stopwatch"></use>
           </svg>
-          <h3 class="advantages__item-headline">Оперативные сроки</h3>
-          <p class="advantages__item-description">Усовершенствованная логистическая система позволяет нам просчитывать
+          <h3>Оперативные сроки</h3>
+          <p>Усовершенствованная логистическая система позволяет нам просчитывать
             стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
         </li>
 
 
         <li class="advantages__item">
-          <svg class="advantages__item-icon" width="36" height="31" viewBox="0 0 36 31">
+          <svg width="36" height="31" viewBox="0 0 36 31">
             <use xlink:href="#icon-hired"></use>
           </svg>
 
-          <h3 class="advantages__item-headline">Крупные поставщики</h3>
-          <p class="advantages__item-description">Нашими поставщиками являются такие крупные мировые компании как:
+          <h3>Крупные поставщики</h3>
+          <p>Нашими поставщиками являются такие крупные мировые компании как:
             OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей
             продукции.
           </p>
         </li>
 
         <li class="advantages__item">
-          <svg class="advantages__item-icon" width="35" height="35" viewBox="0 0 35 35">
+          <svg width="35" height="35" viewBox="0 0 35 35">
             <use xlink:href="#icon-detective"></use>
           </svg>
-          <h3 class="advantages__item-headline">Полная конфиденциальность</h3>
-          <p class="advantages__item-description">По желанию клиента мы обеспечиваем полную конфеденциальность.
+          <h3>Полная конфиденциальность</h3>
+          <p>По желанию клиента мы обеспечиваем полную конфеденциальность.
           </p>
 
         </li>
         <li class="advantages__item">
-          <svg class="advantages__item-icon" width="35" height="35" viewBox="0 0 35 35">
+          <svg width="35" height="35" viewBox="0 0 35 35">
             <use xlink:href="#icon-tag"></use>
           </svg>
-          <h3 class="advantages__item-headline">Персонализация стоимости</h3>
-          <p class="advantages__item-description">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы
+          <h3>Персонализация стоимости</h3>
+          <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы
             установить ту цену, которая Вас устраивает.</p>
         </li>
       </ul>
@@ -160,12 +165,12 @@
         <div class="about__year"></div>
 
         <div class="about__description-wrapper">
-          <h2 class="about__headline">О компании</h2>
-          <p class="about__description">Мы поставляем электронные комплектующие, производим печатные платы и
+          <h2>О компании</h2>
+          <p>Мы поставляем электронные комплектующие, производим печатные платы и
             предоставляем
             мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
           </p>
-          <p class="about__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
+          <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
             HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
             Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов
             крупнейшие
@@ -208,26 +213,27 @@
         <div class="feedback__img-container">
         </div>
         <div class="feedback__container">
-          <h2 class="feedback__headline">Остались вопросы? Задайте их нам!</h2>
-          <p class="feedback__description">Мы проконсультируем Вас бесплатно</p>
-          <form class="feedback__form form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+          <h2>Остались вопросы? Задайте их нам!</h2>
+          <p>Мы проконсультируем Вас бесплатно</p>
+          <form class="feedback__form form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST" id="feedback-form">
 
             <div class="form__container">
-              <input type="text" name="name" id="name" placeholder="Имя" class="form__text-input" required="">
               <label class="visually-hidden" for="name">Введите имя</label>
-              <input type="tel" name="tel" id="tel" placeholder="Телефон" class="form__text-input" required="">
+              <input type="text" name="name" id="name" placeholder="Имя" class="form__text-input" required="">
               <label class="visually-hidden" for="tel">Введите номер телефона</label>
+              <input type="tel" name="tel" id="tel" placeholder="Телефон" class="form__text-input" required="">
             </div>
 
-            <textarea name="text" rows="4" id="message" placeholder="Ваш вопрос" class="form__text-area" required=""></textarea>
             <label class="visually-hidden" for="message">Введите ваш вопрос</label>
+            <textarea name="text" rows="4" id="message" placeholder="Ваш вопрос" class="form__text-area" required="">
+            </textarea>
 
             <div class="form__submit-container">
               <button type="submit" class="form__submit button button--submit">Задать вопрос</button>
 
               <div class="form__agree-container">
-                <input type="checkbox" name="agree" id="agree" class="form__agree" required="">
                 <label class="form__agree-label">Я согласен на обработку персональных данных</label>
+                <input type="checkbox" name="agree" id="agree" class="form__agree" required="">
               </div>
             </div>
           </form>
@@ -245,7 +251,7 @@
 
         <section class="page-footer__social">
           <a class="page-footer__logo-link">
-            <img src="img/logo-b.png" width="216" height="52" alt="" class="page-footer__logo">
+            <img src="img/logo-b.svg" width="216" height="52" alt="Логотип Smart Device" class="page-footer__logo">
           </a>
           <p class="page-footer__copyright-social">1999-2018 SD Service Devices</p>
           <ul class="page-footer__social-list social">
@@ -342,21 +348,20 @@
         <form class="modal-feedback__form form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
 
           <div class="form__container">
-            <input type="text" name="name" id="name" placeholder="Имя" class="form__text-input" required="">
             <label class="visually-hidden" for="name">Введите имя</label>
-            <input type="tel" name="tel" id="tel" placeholder="Телефон" class="form__text-input" required="">
+            <input type="text" name="name" id="name" placeholder="Имя" class="form__text-input" required="">
             <label class="visually-hidden" for="tel">Введите номер телефона</label>
-          </div>
+            <input type="tel" name="tel" id="tel" placeholder="Телефон" class="form__text-input" required="">
 
-          <textarea name="text" rows="4" id="message" placeholder="Ваш вопрос" class="form__text-area" required=""></textarea>
+          </div>
           <label class="visually-hidden" for="message">Введите ваш вопрос</label>
+          <textarea name="text" rows="4" id="message" placeholder="Ваш вопрос" class="form__text-area" required=""></textarea>
 
           <div class="form__submit-container form__submit-container--modal">
             <button type="submit" class="form__submit form__submit--modal button button--submit">Отправить</button>
-
             <div class="form__agree-container form__agree-container--modal">
-              <input type="checkbox" name="agree" id="agree" class="form__agree" required="">
               <label class="form__agree-label">Я согласен на обработку персональных данных</label>
+              <input type="checkbox" name="agree" id="agree" class="form__agree" required="">
             </div>
           </div>
         </form>
@@ -367,8 +372,9 @@
   <div class="popup-layer popup-layer--off"></div>
 
 
-
-  <script src="js/script.js"></script>
+  <script src="js/imask.js"></script>
+  <script src="js/main.js"></script>
+  
 </body>
 
 </html>
