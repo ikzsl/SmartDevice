@@ -11,7 +11,6 @@ var formPhoneMask = IMask(
 });
 
 
-
 var modalWindow = document.querySelector('.modal-feedback');
 var modalCloseButton = document.querySelector('.modal-feedback__close');
 var callbackButton = document.querySelector('.button--callback');
@@ -32,31 +31,28 @@ var onPopupLayerClick = function () {
   popupLayer.removeEventListener('click', onPopupLayerClick);
 }
 
+var onEscKeyDown = function (evt) {
+  if (evt.keyCode === 27) {
+    onPopupLayerClick();
+  }
+};
 
 var onCallbackButtonClick = function () {
   showPopup();
-  document.addEventListener('keydown', function (evt) {
-    if (evt.keyCode === 27) {
-      hidePopup();
-      popupLayer.removeEventListener('click', onPopupLayerClick);
-    }
-  });
-
+  document.addEventListener('keydown', onEscKeyDown);
   popupLayer.addEventListener('click', onPopupLayerClick);
+}
+
+function onModalCloseButtonClick() {
+  hidePopup();
+  popupLayer.removeEventListener('click', onPopupLayerClick);
 }
 
 if (callbackButton) {
   callbackButton.addEventListener('click', onCallbackButtonClick);
 }
 
-
-function onModalCloseButtonClick() {
-  hidePopup()
-  popupLayer.removeEventListener('click', onPopupLayerClick);
-}
-
 if (modalCloseButton) {
   modalCloseButton.addEventListener('click', onModalCloseButtonClick);
 }
-
 
