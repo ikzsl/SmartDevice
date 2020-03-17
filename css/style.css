@@ -360,7 +360,6 @@ body {
     .page-header {
         padding: 0 25px;
         margin-bottom: 55px;
-        min-height: 686px;
     }
 }
 
@@ -368,7 +367,6 @@ body {
     .page-header {
         padding: 0 15px;
         margin-bottom: 40px;
-        min-height: 650px;
     }
 }
 
@@ -572,11 +570,38 @@ body {
 }
 
 .promo__desc-wrapper {
+    position: relative;
     margin: 0;
+    width: 55%;
+}
+
+.promo__desc-wrapper::before {
+    position: absolute;
+    content: "";
+    left: 100%;
+    top: 0;
+    width: 705px;
+    height: 515px;
+    background-image: url("../img/pcb.png");
+    background-size: contain;
+}
+
+@media (max-width: 1023px) {
+    .promo__desc-wrapper {
+        width: 65%;
+    }
+
+    .promo__desc-wrapper::before {
+        right: 5px;
+        top: -20px;
+        width: 465px;
+        height: 340px;
+    }
 }
 
 @media (max-width: 767px) {
     .promo__desc-wrapper {
+        width: auto;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -585,9 +610,17 @@ body {
         -ms-flex-direction: column;
         flex-direction: column;
     }
+
+    .promo__desc-wrapper::before {
+        left: 10px;
+        top: 0;
+        width: 300px;
+        height: 220px;
+    }
 }
 
 .promo__headline {
+    position: relative;
     font-family: "roboto-condensed", "Arial", sans-serif;
     font-weight: bold;
     font-size: 80px;
@@ -612,7 +645,7 @@ body {
         font-size: 40px;
         line-height: 47px;
         margin: 0;
-        padding: 0;
+        padding-top: 200px;
     }
 }
 
@@ -630,8 +663,8 @@ body {
     position: absolute;
     content: "";
     top: 15px;
-    left: -50px;
-    width: 33px;
+    left: -100px;
+    width: 66px;
     height: 2px;
     background-color: #ffffff;
 }
@@ -641,6 +674,11 @@ body {
         font-size: 18px;
         line-height: 156%;
         margin-left: 120px;
+    }
+
+    .promo__desc::before {
+        left: -50px;
+        width: 33px;
     }
 }
 
