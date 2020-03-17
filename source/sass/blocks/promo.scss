@@ -27,22 +27,55 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+
   @media (max-width: $mobile-width) {
     flex-direction: column-reverse;
   }
 }
 
 .promo__desc-wrapper {
+  position: relative;
   margin: 0;
+  width: 55%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 100%;
+    top: 0;
+    width: 705px;
+    height: 515px;
+    background-image: url("../img/pcb.png");
+    background-size: contain;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 65%;
+
+    &::before {
+      right: 5px;
+      top: -20px;
+      width: 465px;
+      height: 340px;
+    }
+  }
 
   @media (max-width: $mobile-width) {
-    // min-width: auto;
+    width: auto;
     display: flex;
     flex-direction: column;
+
+    &::before {
+      left: 10px;
+      top: 0;
+      width: 300px;
+      height: 220px;
+    }
   }
 }
 
 .promo__headline {
+  position: relative;
   font-family: $roboto;
   font-weight: bold;
   font-size: 80px;
@@ -63,7 +96,7 @@
     font-size: 40px;
     line-height: 47px;
     margin: 0;
-    padding: 0;
+    padding-top: 200px;
   }
 }
 
@@ -80,8 +113,8 @@
     position: absolute;
     content: "";
     top: 15px;
-    left: -50px;
-    width: 33px;
+    left: -100px;
+    width: 66px;
     height: 2px;
     background-color: #ffffff;
   }
@@ -90,6 +123,11 @@
     font-size: 18px;
     line-height: 156%;
     margin-left: 120px;
+
+    &::before {
+      left: -50px;
+      width: 33px;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -101,8 +139,6 @@
 
 .promo__action {
   margin-left: 100px;
-
-
 
   @media (max-width: $tablet-width) {
     margin-left: 120px;

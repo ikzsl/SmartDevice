@@ -1,12 +1,11 @@
 'use strict';
+var imask = window.IMask;
 
-var modalPhoneMask = IMask(
-  document.getElementById('modal-tel'), {
+imask(document.getElementById('modal-tel'), {
   mask: '+{7}(000)000-00-00'
 });
 
-var formPhoneMask = IMask(
-  document.getElementById('form-tel'), {
+imask(document.getElementById('form-tel'), {
   mask: '+{7}(000)000-00-00'
 });
 
@@ -29,7 +28,7 @@ var hidePopup = function () {
 var onPopupLayerClick = function () {
   hidePopup();
   popupLayer.removeEventListener('click', onPopupLayerClick);
-}
+};
 
 var onEscKeyDown = function (evt) {
   if (evt.keyCode === 27) {
@@ -41,7 +40,7 @@ var onCallbackButtonClick = function () {
   showPopup();
   document.addEventListener('keydown', onEscKeyDown);
   popupLayer.addEventListener('click', onPopupLayerClick);
-}
+};
 
 function onModalCloseButtonClick() {
   hidePopup();
@@ -55,4 +54,3 @@ if (callbackButton) {
 if (modalCloseButton) {
   modalCloseButton.addEventListener('click', onModalCloseButtonClick);
 }
-
