@@ -1,12 +1,15 @@
 'use strict';
 
-// console.log(IMask);
-// var phoneMask = IMask(
-//   document.getElementById('phone-mask'), {
-//   mask: '+{7}(000)000-00-00'
-// });
+var modalPhoneMask = IMask(
+  document.getElementById('modal-tel'), {
+  mask: '+{7}(000)000-00-00'
+});
 
-// console.log(phoneMask(826384768237));
+var formPhoneMask = IMask(
+  document.getElementById('form-tel'), {
+  mask: '+{7}(000)000-00-00'
+});
+
 
 
 var modalWindow = document.querySelector('.modal-feedback');
