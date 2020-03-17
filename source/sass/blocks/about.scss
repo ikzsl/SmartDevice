@@ -52,24 +52,6 @@
   }
 }
 
-.about__year {
-  min-width: 170px;
-  height: 220px;
-  background-image: url("../img/2005.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  // border: 1px solid red;
-
-  @media (max-width: $tablet-width) {
-    min-width: 180px;
-    height: 240px;
-  }
-
-  @media (max-width: $mobile-width) {
-    display: none;
-  }
-}
-
 .about__description-wrapper h2 {
   margin: 0;
   margin-bottom: 20px;

@@ -1357,11 +1357,49 @@ body {
 }
 
 .about__wrapper {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     max-width: 1170px;
     margin: 0 auto;
+    padding-left: 170px;
+}
+
+.about__wrapper::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 170px;
+    height: 310px;
+    background-image: url("../img/2005.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1023px) {
+    .about__wrapper::before {
+        min-width: 180px;
+        height: 360px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about__wrapper::before {
+        display: none;
+    }
+}
+
+@media (max-width: 1023px) {
+    .about__wrapper {
+        padding-left: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about__wrapper {
+        padding-left: 0;
+    }
 }
 
 .about__year {
