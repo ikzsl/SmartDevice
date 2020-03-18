@@ -529,6 +529,7 @@ body {
     padding: 0 50px;
     margin-bottom: 110px;
     padding-top: 250px;
+    overflow: hidden;
 }
 
 @media (max-width: 1023px) {
@@ -1944,10 +1945,6 @@ body {
     color: #ffffff;
 }
 
-.form__text-area::-moz-placeholder {
-    color: #ffffff;
-}
-
 .form__agree {
     margin-right: 20px;
 }
@@ -1961,6 +1958,8 @@ body {
 .form__agree-label {
     font-size: 14px;
     line-height: 16px;
+    -ms-flex-item-align: center;
+    align-self: center;
 }
 
 .popup-layer {
