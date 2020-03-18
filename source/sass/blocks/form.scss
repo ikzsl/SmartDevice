@@ -29,6 +29,7 @@
   display: flex;
   width: 48%;
 
+
   &--modal {
     width: 100%;
   }
@@ -36,6 +37,7 @@
   @media (max-width: $mobile-width) {
     width: 100%;
     justify-content: flex-start;
+
   }
 }
 
@@ -87,9 +89,9 @@
     color: $white;
   }
 
-  &::-moz-placeholder {
-    color: $white;
-  }
+  // &::-moz-placeholder {
+  //   color: $white;
+  // }
 }
 
 .form__agree {
@@ -103,4 +105,5 @@
 .form__agree-label {
   font-size: 14px;
   line-height: 16px;
+  margin-left: 20px;
 }
