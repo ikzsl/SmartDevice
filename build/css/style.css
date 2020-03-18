@@ -1295,7 +1295,7 @@ body {
 .advantages__item:hover, .advantages__item:focus {
     background-color: #00b2ff;
     border-color: #00b2ff;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -1303,11 +1303,11 @@ body {
     fill: white;
 }
 
-.advantages__item:hover .advantages__item-headline, .advantages__item:focus .advantages__item-headline {
+.advantages__item:hover h3, .advantages__item:focus h3 {
     color: white;
 }
 
-.advantages__item:hover .advantages__item-description, .advantages__item:focus .advantages__item-description {
+.advantages__item:hover p, .advantages__item:focus p {
     color: white;
 }
 
@@ -1610,7 +1610,7 @@ body {
 .products__link span {
     position: absolute;
     display: block;
-    margin: 45px;
+    margin: 55px 45px;
     max-width: 170px;
     text-shadow: 2px 2px 2px #000000;
     font-family: "roboto-condensed", "Arial", sans-serif;

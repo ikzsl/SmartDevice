@@ -60,10 +60,18 @@
   border: none;
   padding: 15px;
   margin-bottom: 40px;
-  color: inherit;
+  color: $white;
 
   @media (max-width: $tablet-width) {
     width: auto;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $white;
+  }
+
+  &::-moz-placeholder {
+    color: $white;
   }
 }
 
@@ -73,7 +81,15 @@
   padding: 15px;
   margin-bottom: 40px;
   resize: none;
-  color: inherit;
+  color: $white;
+
+  &::-webkit-input-placeholder {
+    color: $white;
+  }
+
+  &::-moz-placeholder {
+    color: $white;
+  }
 }
 
 .form__agree {

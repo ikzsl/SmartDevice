@@ -60,7 +60,7 @@
   &:focus {
     background-color: $bg-blue;
     border-color: $bg-blue;
-    color: white;
+    color: $white;
 
     cursor: pointer;
 
@@ -68,11 +68,11 @@
       fill: white;
     }
 
-    .advantages__item-headline {
+    h3 {
       color: white;
     }
 
-    .advantages__item-description {
+    p {
       color: white;
     }
   }
@@ -89,7 +89,6 @@
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
-
   color: $bg-blue;
   font-family: $roboto;
   font-weight: normal;
