@@ -1620,6 +1620,12 @@ body {
     z-index: 2;
 }
 
+@media (max-width: 767px) {
+    .products__link span {
+        margin: 25px 35px;
+    }
+}
+
 .feedback {
     background-color: #00b2ff;
     padding: 100px 150px;
