@@ -29,7 +29,6 @@
   display: flex;
   justify-content: space-between;
 
-
   @media (max-width: $mobile-width) {
     flex-direction: column-reverse;
   }
@@ -40,7 +39,7 @@
   margin: 0;
   width: 55%;
 
-  &::before {
+  &::after {
     position: absolute;
     content: "";
     left: 100%;
@@ -51,14 +50,33 @@
     background-size: contain;
   }
 
+  &::before {
+    position: absolute;
+    content: "";
+    left: 100%;
+    top: -100px;
+    width: 705px;
+    height: 515px;
+    background-image: url("../img/triangles-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
   @media (max-width: $tablet-width) {
     width: 65%;
 
-    &::before {
+    &::after {
       right: 5px;
       top: -20px;
       width: 465px;
       height: 340px;
+    }
+
+    &::before {
+      left: 500px;
+      top: -160px;
+      width: 500px;
+      height: 500px;
     }
   }
 
@@ -67,11 +85,18 @@
     display: flex;
     flex-direction: column;
 
-    &::before {
+    &::after {
       left: 10px;
       top: 0;
       width: 300px;
       height: 220px;
+    }
+
+    &::before {
+      left: 200px;
+      top: -100px;
+      width: 480px;
+      height: 480px;
     }
   }
 }
@@ -87,6 +112,7 @@
   margin: 0;
   margin-bottom: 25px;
   padding-top: 50px;
+  z-index: 1;
 
   @media (max-width: $tablet-width) {
     font-size: 60px;
@@ -141,6 +167,7 @@
 
 .promo__action {
   margin-left: 100px;
+  z-index: 1;
 
   @media (max-width: $tablet-width) {
     margin-left: 120px;
@@ -190,7 +217,7 @@
   position: absolute;
   top: 300px;
   display: block;
-  transform: rotate(-90deg) translateY(-40px) translateX(-450px) ;
+  transform: rotate(-90deg) translateY(-40px) translateX(-450px);
   text-decoration: none;
   color: $white;
   opacity: 0.5;
