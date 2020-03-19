@@ -187,8 +187,10 @@
 }
 
 .promo__scroll-down {
-  display: inline-block;
-  transform: rotate(-90deg) translateY(-40px);
+  position: absolute;
+  top: 300px;
+  display: block;
+  transform: rotate(-90deg) translateY(-40px) translateX(-450px) ;
   text-decoration: none;
   color: $white;
   opacity: 0.5;

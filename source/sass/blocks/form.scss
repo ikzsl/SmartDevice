@@ -29,7 +29,6 @@
   display: flex;
   width: 48%;
 
-
   &--modal {
     width: 100%;
   }
@@ -37,7 +36,6 @@
   @media (max-width: $mobile-width) {
     width: 100%;
     justify-content: flex-start;
-
   }
 }
 
@@ -103,7 +101,18 @@
 }
 
 .form__agree-label {
+  position: relative;
   font-size: 14px;
   line-height: 16px;
-  margin-left: 20px;
+  margin-left: 30px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -32px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $white;
+  }
 }
