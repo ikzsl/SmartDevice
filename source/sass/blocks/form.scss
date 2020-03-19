@@ -7,6 +7,10 @@
   display: flex;
   justify-content: space-between;
 
+  &--modal {
+    flex-direction: column;
+  }
+
   @media (max-width: $mobile-width) {
     flex-direction: column;
   }
@@ -55,7 +59,7 @@
   }
 }
 
-.form__text-input {
+.form__container input {
   width: 48%;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
@@ -67,13 +71,24 @@
     width: auto;
   }
 
+  @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
+  }
+
   &::-webkit-input-placeholder {
     color: $white;
+    opacity: 1;
   }
 
   &::-moz-placeholder {
     color: $white;
+    opacity: 1;
   }
+}
+
+.form__container--modal input {
+  width: auto;
+  margin-bottom: 30px;
 }
 
 .form__text-area {
@@ -86,11 +101,13 @@
 
   &::-webkit-input-placeholder {
     color: $white;
+    opacity: 1;
   }
 
-  // &::-moz-placeholder {
-  //   color: $white;
-  // }
+  &::-moz-placeholder {
+    color: $white;
+    opacity: 1;
+  }
 }
 
 .form__agree {
@@ -105,13 +122,14 @@
   position: relative;
   font-size: 14px;
   line-height: 16px;
-  margin-left: 30px;
+  margin-left: 40px;
+  color: rgba(255, 255, 255, 0.8);
 
   &::before {
     position: absolute;
     content: "";
     top: 0;
-    left: -32px;
+    left: -40px;
     width: 16px;
     height: 16px;
     border: 1px solid $white;
@@ -124,7 +142,7 @@ input:checked ~ .form__agree-label {
     position: absolute;
     content: "";
     top: 3px;
-    left: -26px;
+    left: -34px;
     width: 5px;
     height: 7px;
     border-left: none;

@@ -1892,6 +1892,9 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: 48%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .form__agree-container--modal {
@@ -1941,10 +1944,12 @@ body {
 
 .form__text-input::-webkit-input-placeholder {
     color: #ffffff;
+    opacity: 1;
 }
 
 .form__text-input::-moz-placeholder {
     color: #ffffff;
+    opacity: 1;
 }
 
 .form__text-area {
@@ -1985,6 +1990,20 @@ body {
     width: 16px;
     height: 16px;
     border: 1px solid #ffffff;
+}
+
+input:checked ~ .form__agree-label::after {
+    border: 1px solid #ffffff;
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: -26px;
+    width: 5px;
+    height: 7px;
+    border-left: none;
+    border-top: none;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .popup-layer {
