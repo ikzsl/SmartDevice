@@ -590,17 +590,6 @@ body {
     width: 55%;
 }
 
-.promo__desc-wrapper::before {
-    position: absolute;
-    content: "";
-    left: 100%;
-    top: 0;
-    width: 705px;
-    height: 515px;
-    background-image: url("../img/pcb.png");
-    background-size: contain;
-}
-
 .promo__desc-wrapper::after {
     position: absolute;
     content: "";
@@ -612,16 +601,35 @@ body {
     background-size: contain;
 }
 
+.promo__desc-wrapper::before {
+    position: absolute;
+    content: "";
+    left: 100%;
+    top: -100px;
+    width: 705px;
+    height: 515px;
+    background-image: url("../img/triangles-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 @media (max-width: 1023px) {
     .promo__desc-wrapper {
         width: 65%;
     }
 
-    .promo__desc-wrapper::before {
+    .promo__desc-wrapper::after {
         right: 5px;
         top: -20px;
         width: 465px;
         height: 340px;
+    }
+
+    .promo__desc-wrapper::before {
+        left: 500px;
+        top: -160px;
+        width: 500px;
+        height: 500px;
     }
 }
 
@@ -637,11 +645,18 @@ body {
         flex-direction: column;
     }
 
-    .promo__desc-wrapper::before {
+    .promo__desc-wrapper::after {
         left: 10px;
         top: 0;
         width: 300px;
         height: 220px;
+    }
+
+    .promo__desc-wrapper::before {
+        left: 200px;
+        top: -100px;
+        width: 480px;
+        height: 480px;
     }
 }
 
@@ -656,6 +671,7 @@ body {
     margin: 0;
     margin-bottom: 25px;
     padding-top: 50px;
+    z-index: 1;
 }
 
 @media (max-width: 1023px) {
@@ -717,6 +733,7 @@ body {
 
 .promo__action {
     margin-left: 100px;
+    z-index: 1;
 }
 
 @media (max-width: 1023px) {
@@ -1593,6 +1610,13 @@ body {
 
 .page-footer__contacts {
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .social {
@@ -1656,6 +1680,11 @@ body {
 .links__link {
     text-decoration: none;
     color: inherit;
+}
+
+.links__link:hover, .links__link:focus {
+    text-decoration: underline;
+    color: #000000;
 }
 
 .button {
