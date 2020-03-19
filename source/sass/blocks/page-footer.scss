@@ -1,5 +1,5 @@
 .page-footer {
- 
+
 
   box-sizing: content-box;
   background-color: $bg-white;
@@ -45,8 +45,9 @@
 
     height: 1px;
 
-    width: 200vw; /* включает в себя полосу прокрутки от body */
+    width: 300vw; /* включает в себя полосу прокрутки от body */
     margin-left: -100vw;
+
   }
 
   @media (max-width: $tablet-width) {
@@ -123,7 +124,7 @@
 
       height: 1px;
 
-      width: 200vw; /* включает в себя полосу прокрутки от body */
+      width: 300vw; /* включает в себя полосу прокрутки от body */
       margin-left: -100vw;
     }
   }

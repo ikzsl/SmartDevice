@@ -1853,6 +1853,13 @@ body {
     justify-content: space-between;
 }
 
+.form__container--modal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
 @media (max-width: 767px) {
     .form__container {
         -webkit-box-orient: vertical;
@@ -1927,7 +1934,7 @@ body {
     }
 }
 
-.form__text-input {
+.form__container input {
     width: 48%;
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
@@ -1937,19 +1944,30 @@ body {
 }
 
 @media (max-width: 1023px) {
-    .form__text-input {
+    .form__container input {
         width: auto;
     }
 }
 
-.form__text-input::-webkit-input-placeholder {
+@media (max-width: 767px) {
+    .form__container input {
+        margin-bottom: 30px;
+    }
+}
+
+.form__container input::-webkit-input-placeholder {
     color: #ffffff;
     opacity: 1;
 }
 
-.form__text-input::-moz-placeholder {
+.form__container input::-moz-placeholder {
     color: #ffffff;
     opacity: 1;
+}
+
+.form__container--modal input {
+    width: auto;
+    margin-bottom: 30px;
 }
 
 .form__text-area {
@@ -1963,6 +1981,12 @@ body {
 
 .form__text-area::-webkit-input-placeholder {
     color: #ffffff;
+    opacity: 1;
+}
+
+.form__text-area::-moz-placeholder {
+    color: #ffffff;
+    opacity: 1;
 }
 
 .form__agree {
@@ -1979,14 +2003,16 @@ body {
     position: relative;
     font-size: 14px;
     line-height: 16px;
-    margin-left: 30px;
+    margin-left: 40px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
 }
 
 .form__agree-label::before {
     position: absolute;
     content: "";
     top: 0;
-    left: -32px;
+    left: -40px;
     width: 16px;
     height: 16px;
     border: 1px solid #ffffff;
@@ -1997,7 +2023,7 @@ input:checked ~ .form__agree-label::after {
     position: absolute;
     content: "";
     top: 3px;
-    left: -26px;
+    left: -34px;
     width: 5px;
     height: 7px;
     border-left: none;
