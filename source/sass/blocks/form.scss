@@ -28,6 +28,7 @@
 .form__agree-container {
   display: flex;
   width: 48%;
+  align-items: center;
 
   &--modal {
     width: 100%;
@@ -114,5 +115,20 @@
     width: 16px;
     height: 16px;
     border: 1px solid $white;
+  }
+}
+
+input:checked ~ .form__agree-label {
+  &::after {
+    border: 1px solid $white;
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: -26px;
+    width: 5px;
+    height: 7px;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
   }
 }
