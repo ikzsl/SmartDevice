@@ -1443,6 +1443,9 @@ body {
     letter-spacing: 0.04em;
     margin: 0;
     padding: 14px 0;
+}
+
+.page-footer__copyright a {
     text-decoration: none;
     color: inherit;
 }

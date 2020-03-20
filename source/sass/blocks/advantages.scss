@@ -39,7 +39,7 @@
 
 .advantages__item {
   width: 49%;
-  min-height: 300px;
+  min-height: 49%;
   padding: 40px 45px;
   margin-bottom: 30px;
   border: 1px solid $gray-light;
@@ -48,11 +48,12 @@
   transition: all 0.2s ease-in;
 
   @media (max-width: $tablet-width) {
-    min-height: 305px;
+    min-height: 300px;
     padding: 25px;
   }
 
   @media (max-width: $mobile-width) {
+    min-height: 305px;
     width: 100%;
   }
 
