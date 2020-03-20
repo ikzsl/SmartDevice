@@ -357,6 +357,10 @@ body {
     box-sizing: inherit;
 }
 
+.lock {
+    overflow: hidden;
+}
+
 .page-header {
     position: absolute;
     color: #ffffff;
@@ -1169,6 +1173,7 @@ body {
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    background-color: #1b2d37;
 }
 
 .products__link {
@@ -2089,6 +2094,7 @@ input:checked ~ .form__agree-label::after {
     height: 100%;
     background: #000000;
     opacity: 0.5;
+    z-index: 1;
 }
 
 .popup-layer--off {

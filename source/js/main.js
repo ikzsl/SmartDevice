@@ -1,4 +1,5 @@
 'use strict';
+
 var imask = window.IMask;
 
 imask(document.getElementById('modal-tel'), {
@@ -15,14 +16,17 @@ var modalCloseButton = document.querySelector('.modal-feedback__close');
 var callbackButton = document.querySelector('.button--callback');
 var popupLayer = document.querySelector('.popup-layer');
 
+
 var showPopup = function () {
   modalWindow.classList.remove('modal-feedback--off');
   popupLayer.classList.remove('popup-layer--off');
+  document.body.classList.add('lock');
 };
 
 var hidePopup = function () {
   modalWindow.classList.add('modal-feedback--off');
   popupLayer.classList.add('popup-layer--off');
+  document.body.classList.remove('lock');
 };
 
 var onPopupLayerClick = function () {
@@ -54,3 +58,5 @@ if (callbackButton) {
 if (modalCloseButton) {
   modalCloseButton.addEventListener('click', onModalCloseButtonClick);
 }
+
+

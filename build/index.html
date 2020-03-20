@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Smart Device - производство и монтаж печатных плат, поставка комплектующих, блоков и модулей">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -247,8 +248,8 @@
                 <label class="visually-hidden" for="form-tel">Введите номер телефона</label>
                 <input type="tel" name="tel" id="form-tel" placeholder="Телефон" class="form__text-input" required="">
               </div>
-
-              <textarea name="text" rows="4" placeholder="Ваш вопрос" class="form__text-area" required=""></textarea>
+              <label class="visually-hidden" for="form-message">Введите ваш вопрос</label>
+              <textarea name="text" rows="4" id="form-message" placeholder="Ваш вопрос" class="form__text-area" required=""></textarea>
 
               <div class="form__submit-container">
                 <button type="submit" class="form__submit button button--submit">Задать вопрос</button>
@@ -363,6 +364,7 @@
     </div>
 
   </footer>
+  <div class="popup-layer popup-layer--off"></div>
 
   <section class="modal-feedback modal-feedback--off">
 
@@ -394,11 +396,10 @@
     </div>
     <button type="button" class="modal-feedback__close">Закрыть</button>
   </section>
-  <div class="popup-layer popup-layer--off"></div>
-
 
   <script src="js/imask.js"></script>
   <script src="js/main.js"></script>
+
 
 </body>
 
