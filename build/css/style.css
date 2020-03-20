@@ -1278,14 +1278,35 @@ body {
     width: 50%;
 }
 
+.feedback__container::after {
+    position: absolute;
+    content: "";
+    left: -550px;
+    top: 80px;
+    width: 510px;
+    height: 250px;
+    background-image: url("../img/airplane.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+@media (max-width: 1023px) {
+    .feedback__container::after {
+        display: none;
+    }
+}
+
 .feedback__container::before {
     position: absolute;
     content: "";
-    left: -770px;
-    width: 660px;
-    height: 480px;
-    background-image: url("../img/paper_airplane.png");
-    background-size: cover;
+    left: -750px;
+    top: -150px;
+    width: 620px;
+    height: 600px;
+    background-image: url("../img/dots.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     z-index: 0;
 }
 

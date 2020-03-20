@@ -129,8 +129,8 @@
   &::before {
     position: absolute;
     content: "";
-    top: 0;
-    left: 0px;
+    top: 2px;
+    left: 8px;
     width: 16px;
     height: 16px;
     border: 1px solid $white;
@@ -142,8 +142,8 @@ input:checked ~ .form__agree-label {
     border: 1px solid $white;
     position: absolute;
     content: "";
-    top: 3px;
-    left: 6px;
+    top: 5px;
+    left: 14px;
     width: 5px;
     height: 7px;
     border-left: none;

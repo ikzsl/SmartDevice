@@ -40,9 +40,7 @@
     background: #626962;
     opacity: 0.2;
     top: 0;
-
     height: 1px;
-
     width: 300vw; /* включает в себя полосу прокрутки от body */
     margin-left: -100vw;
   }
@@ -53,6 +51,7 @@
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
+    padding:  10px 0;
   }
 }
 
@@ -69,6 +68,7 @@
 }
 
 .page-footer__copyright a {
+
   &:hover,
   &:focus {
     text-decoration: underline;

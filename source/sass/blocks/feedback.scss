@@ -32,10 +32,10 @@
   &::after {
     position: absolute;
     content: "";
-    left: -630px;
-    top: 100px;
+    left: -550px;
+    top: 80px;
     width: 510px;
-    height: 290px;
+    height: 250px;
     background-image: url("../img/airplane.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -49,10 +49,10 @@
   &::before {
     position: absolute;
     content: "";
-    left: -800px;
-    top: -120px;
-    width: 670px;
-    height: 650px;
+    left: -750px;
+    top: -150px;
+    width: 620px;
+    height: 600px;
     background-image: url("../img/dots.png");
     background-repeat: no-repeat;
     background-size: contain;
