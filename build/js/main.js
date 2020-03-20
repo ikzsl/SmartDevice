@@ -59,4 +59,52 @@ if (modalCloseButton) {
   modalCloseButton.addEventListener('click', onModalCloseButtonClick);
 }
 
+// -------------------accordeon-----------------------------------------
 
+var pageFooterContent = document.querySelector('.page-footer__content-wrapper');
+
+var siteSectionsButton = pageFooterContent.querySelector('.page-footer__site-sections-button');
+var contactsButton = pageFooterContent.querySelector('.page-footer__our-office-button');
+
+var siteSectionsContainer = pageFooterContent.querySelector('.page-footer__site-section-container');
+var contactsContainer = pageFooterContent.querySelector('.page-footer__contacts');
+
+
+var isSiteSectionsUnrolled = false;
+var isContactsUnrolled = false;
+
+var onSiteSectionsRender = function () {
+  isSiteSectionsUnrolled = !isSiteSectionsUnrolled;
+
+  if (isSiteSectionsUnrolled) {
+    siteSectionsContainer.classList.remove('rolled');
+  } else {
+    siteSectionsContainer.classList.add('rolled');
+  }
+
+  if (isContactsUnrolled) {
+    contactsContainer.classList.add('rolled');
+    isContactsUnrolled = false;
+  }
+};
+
+var onContactsRender = function () {
+  isContactsUnrolled = !isContactsUnrolled;
+
+  if (isContactsUnrolled) {
+    contactsContainer.classList.remove('rolled');
+  } else {
+    contactsContainer.classList.add('rolled');
+  }
+
+  if (isSiteSectionsUnrolled) {
+    siteSectionsContainer.classList.add('rolled');
+    isSiteSectionsUnrolled = false;
+  }
+};
+
+
+siteSectionsButton.addEventListener('click', onSiteSectionsRender);
+contactsButton.addEventListener('click', onContactsRender);
+
+// -----------------------------------------------------------------

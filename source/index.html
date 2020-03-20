@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="Description" content="Smart Device - производство и монтаж печатных плат, поставка комплектующих, блоков и модулей">
+  <meta name="Description"
+    content="Smart Device - производство и монтаж печатных плат, поставка комплектующих, блоков и модулей">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -212,7 +213,8 @@
                 <input type="tel" name="tel" id="form-tel" placeholder="Телефон" class="form__text-input" required>
               </div>
               <label class="visually-hidden" for="form-message">Введите ваш вопрос</label>
-              <textarea name="text" rows="4" id="form-message" placeholder="Ваш вопрос" class="form__text-area" required></textarea>
+              <textarea name="text" rows="4" id="form-message" placeholder="Ваш вопрос" class="form__text-area"
+                required></textarea>
 
               <div class="form__submit-container">
                 <button type="submit" class="form__submit button button--submit">Задать вопрос</button>
@@ -275,40 +277,49 @@
 
         <div class="page-footer__content-wrapper">
           <section class="page-footer__site-sections">
+
+
             <h2 class="page-footer__headline">Разделы сайта</h2>
-            <ul class="page-footer__site-section-list links">
-              <li class="links__item">
-                <a href="#" class="links__link">О компании</a>
-              </li>
-              <li class="links__item">
-                <a href="#" class="links__link">Продукты</a>
-              </li>
-              <li class="links__item">
-                <a href="#" class="links__link">Производство печатных плат
-                </a>
-              </li>
-              <li class="links__item">
-                <a href="#" class="links__link">Монтаж печатных плат</a>
-              </li>
-              <li class="links__item">
-                <a href="#" class="links__link">Комплектующие</a>
-              </li>
-              <li class="links__item">
-                <a href="#" class="links__link">Доставка</a>
-              </li>
-              <li class="links__item">
-                <a href="#" class="links__link">Контакты</a>
-              </li>
-            </ul>
+
+            <div class="page-footer__site-section-container rolled">
+              <ul class="page-footer__site-section-list links">
+                <li class="links__item">
+                  <a href="#" class="links__link">О компании</a>
+                </li>
+                <li class="links__item">
+                  <a href="#" class="links__link">Продукты</a>
+                </li>
+                <li class="links__item">
+                  <a href="#" class="links__link">Производство печатных плат
+                  </a>
+                </li>
+                <li class="links__item">
+                  <a href="#" class="links__link">Монтаж печатных плат</a>
+                </li>
+                <li class="links__item">
+                  <a href="#" class="links__link">Комплектующие</a>
+                </li>
+                <li class="links__item">
+                  <a href="#" class="links__link">Доставка</a>
+                </li>
+                <li class="links__item">
+                  <a href="#" class="links__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <button class="page-footer__site-sections-button toggler" type="button"></button>
           </section>
           <section class="page-footer__our-office">
+
             <h2 class="page-footer__headline">Наш офис</h2>
-            <div class="page-footer__contacts">
+
+            <div class="page-footer__contacts rolled">
               <span>г. Мытищи, Олимпийский проспект, д.10 </span>
               <a href="tel:+7 (495) 589-40-50" class="links__link">+7 (495) 589-40-50</a>
               <a href="tel:+7 (925) 003-87-67" class="links__link">+7 (925) 003-87-67</a>
               <a href="tel:+7 (926) 926-080-79" class="links__link">+7 (926) 926-080-79</a>
             </div>
+            <button class="page-footer__our-office-button toggler" type="button"></button>
           </section>
         </div>
 
@@ -361,7 +372,7 @@
     <button type="button" class="modal-feedback__close">Закрыть</button>
   </section>
 
-  <script src="js/imask.js"></script>
+  <!-- <script src="js/imask.js"></script> -->
   <script src="js/main.js"></script>
 
 

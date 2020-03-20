@@ -1039,6 +1039,7 @@ body {
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 21px;
+    color: #666666;
 }
 
 @media (max-width: 1023px) {
@@ -1411,8 +1412,7 @@ body {
 .page-footer__copyright::before {
     position: absolute;
     content: "";
-    background: #626962;
-    opacity: 0.2;
+    background: #dbdbdb;
     top: 0;
     height: 1px;
     width: 300vw;
@@ -1432,6 +1432,7 @@ body {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        padding: 10px 0;
     }
 }
 
@@ -1530,8 +1531,7 @@ body {
     .page-footer__social::before {
         position: absolute;
         content: "";
-        background: #626962;
-        opacity: 0.2;
+        background: #dbdbdb;
         bottom: 0;
         height: 1px;
         width: 300vw;
@@ -1612,8 +1612,7 @@ body {
     .page-footer__site-sections::before {
         position: absolute;
         content: "";
-        background: #626962;
-        opacity: 0.2;
+        background: #dbdbdb;
         bottom: 0;
         height: 1px;
         width: 200vw;
@@ -1624,6 +1623,7 @@ body {
 
 .page-footer__our-office {
     margin: 0;
+    position: relative;
 }
 
 @media (max-width: 767px) {
@@ -1634,13 +1634,22 @@ body {
 
 .page-footer__headline {
     margin: 0;
-    margin-bottom: 25px;
     font-family: "roboto-condensed", "Arial", sans-serif;
     text-transform: uppercase;
     font-weight: normal;
     font-size: 15px;
     line-height: 16px;
     color: #1b2d37;
+}
+
+@media (max-width: 767px) {
+    .page-footer__headline {
+        margin: 0;
+    }
+}
+
+.page-footer__site-section-list {
+    margin-top: 25px;
 }
 
 .page-footer__contacts {
@@ -1652,6 +1661,7 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding-top: 25px;
 }
 
 .social {
@@ -1692,7 +1702,6 @@ body {
 
 .links {
     list-style: none;
-    margin: 0;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2086,8 +2095,8 @@ body {
 .form__agree-label::before {
     position: absolute;
     content: "";
-    top: 0;
-    left: 0px;
+    top: 2px;
+    left: 8px;
     width: 16px;
     height: 16px;
     border: 1px solid #ffffff;
@@ -2097,8 +2106,8 @@ input:checked ~ .form__agree-label::after {
     border: 1px solid #ffffff;
     position: absolute;
     content: "";
-    top: 3px;
-    left: 6px;
+    top: 5px;
+    left: 14px;
     width: 5px;
     height: 7px;
     border-left: none;
@@ -2134,4 +2143,57 @@ input:checked ~ .form__agree-label::after {
     border: 0;
     -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
+}
+
+.toggler {
+    position: absolute;
+    display: none;
+    background-color: transparent;
+    outline: none;
+}
+
+@media (max-width: 767px) {
+    .toggler {
+        display: block;
+        top: 28px;
+        right: 10px;
+        width: 17px;
+        height: 17px;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .toggler::before {
+        position: absolute;
+        content: "";
+        top: 8px;
+        right: 0;
+        width: 17px;
+        height: 1px;
+        background-color: #c4c4c4;
+    }
+}
+
+@media (max-width: 767px) {
+    .rolled ~ .toggler::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 8px;
+        width: 1px;
+        height: 17px;
+        background-color: #c4c4c4;
+    }
+}
+
+.rolled {
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .rolled {
+        margin: 0;
+        display: none;
+    }
 }
