@@ -877,7 +877,7 @@ body {
 
 .advantages__item {
     width: 49%;
-    min-height: 300px;
+    min-height: 49%;
     padding: 40px 45px;
     margin-bottom: 30px;
     border: 1px solid #ebebeb;
@@ -888,13 +888,14 @@ body {
 
 @media (max-width: 1023px) {
     .advantages__item {
-        min-height: 305px;
+        min-height: 300px;
         padding: 25px;
     }
 }
 
 @media (max-width: 767px) {
     .advantages__item {
+        min-height: 305px;
         width: 100%;
     }
 }
@@ -2103,6 +2104,16 @@ body {
     width: 16px;
     height: 16px;
     border: 1px solid #ffffff;
+}
+
+.form__agree-label:hover::before, .form__agree-label:hover::before {
+    -webkit-box-shadow: 0 0 2px 2px #ffffff;
+    box-shadow: 0 0 2px 2px #ffffff;
+}
+
+input:focus ~ .form__agree-label::before {
+    -webkit-box-shadow: 0 0 2px 2px #ffffff;
+    box-shadow: 0 0 2px 2px #ffffff;
 }
 
 input:checked ~ .form__agree-label::after {

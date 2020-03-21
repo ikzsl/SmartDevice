@@ -1,5 +1,6 @@
 'use strict';
 
+
 var imask = window.IMask;
 
 imask(document.getElementById('modal-tel'), {
@@ -21,12 +22,15 @@ var showPopup = function () {
   modalWindow.classList.remove('modal-feedback--off');
   popupLayer.classList.remove('popup-layer--off');
   document.body.classList.add('lock');
+
 };
 
 var hidePopup = function () {
+
   modalWindow.classList.add('modal-feedback--off');
   popupLayer.classList.add('popup-layer--off');
   document.body.classList.remove('lock');
+
 };
 
 var onPopupLayerClick = function () {
@@ -58,6 +62,13 @@ if (callbackButton) {
 if (modalCloseButton) {
   modalCloseButton.addEventListener('click', onModalCloseButtonClick);
 }
+
+var focusLock = window.focusLock;
+
+
+focusLock.on(modalWindow);
+focusLock.off(modalCloseButton);
+
 
 // -------------------accordeon-----------------------------------------
 
@@ -108,3 +119,5 @@ siteSectionsButton.addEventListener('click', onSiteSectionsRender);
 contactsButton.addEventListener('click', onContactsRender);
 
 // -----------------------------------------------------------------
+
+

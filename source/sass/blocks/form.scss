@@ -135,6 +135,15 @@
     height: 16px;
     border: 1px solid $white;
   }
+
+  &:hover::before,
+  &:hover::before {
+    box-shadow: 0 0 2px 2px $white;
+  }
+}
+
+input:focus ~ .form__agree-label::before {
+  box-shadow: 0 0 2px 2px $white;
 }
 
 input:checked ~ .form__agree-label {
