@@ -1,4 +1,7 @@
 .page-footer {
+  flex-shrink: 0;
+
+
   box-sizing: content-box;
   background-color: $bg-white;
 
@@ -38,7 +41,8 @@
     background: #dbdbdb;
     top: 0;
     height: 1px;
-    width: 300vw; /* включает в себя полосу прокрутки от body */
+    width: 300vw;
+    /* включает в себя полосу прокрутки от body */
     margin-left: -100vw;
   }
 
@@ -67,7 +71,7 @@
 .page-footer__copyright a {
   text-decoration: none;
   color: inherit;
-  
+
   &:hover,
   &:focus {
     text-decoration: underline;
@@ -125,7 +129,8 @@
 
       height: 1px;
 
-      width: 300vw; /* включает в себя полосу прокрутки от body */
+      width: 300vw;
+      /* включает в себя полосу прокрутки от body */
       margin-left: -100vw;
     }
   }
@@ -136,6 +141,14 @@
     margin: 0;
   }
 }
+
+.page-footer__logo {
+  // background-color: #cdcdcd;
+  min-width: 216px;
+  min-height: 52px;
+
+}
+
 
 .page-footer__logo-link {
   margin-bottom: 30px;
@@ -182,7 +195,8 @@
       background: #dbdbdb;
       bottom: 0;
       height: 1px;
-      width: 200vw; /* включает в себя полосу прокрутки от body */
+      width: 200vw;
+      /* включает в себя полосу прокрутки от body */
       margin-left: -100vw;
     }
   }

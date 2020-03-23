@@ -66,6 +66,7 @@
   margin-bottom: 30px;
   width: 30%;
   overflow: hidden;
+  background-color: #26353d;
 
   @media (max-width: $tablet-width) {
     flex-grow: 0;
@@ -83,7 +84,7 @@
   opacity: 0.2;
   width: 100%;
   object-fit: cover;
-  background-color: $bg-dark;
+
 }
 
 .products__link {
