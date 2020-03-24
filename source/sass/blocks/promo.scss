@@ -37,7 +37,7 @@
 .promo__desc-wrapper {
   position: relative;
   margin: 0;
-  width: 55%;
+  width: 60%;
 
   &::after {
     position: absolute;
@@ -102,6 +102,7 @@
 }
 
 .promo__headline {
+  white-space: nowrap;
   position: relative;
   font-family: $roboto;
   font-weight: bold;
@@ -115,6 +116,7 @@
   z-index: 1;
 
   @media (max-width: $tablet-width) {
+    white-space: normal;
     font-size: 60px;
     line-height: 70px;
     margin-left: 60px;

@@ -74,8 +74,8 @@ focusLock.off(modalCloseButton);
 
 var pageFooterContent = document.querySelector('.page-footer__content-wrapper');
 
-var siteSectionsButton = pageFooterContent.querySelector('.page-footer__site-sections-button');
-var contactsButton = pageFooterContent.querySelector('.page-footer__our-office-button');
+var siteSections = pageFooterContent.querySelector('.page-footer__site-sections');
+var contacts = pageFooterContent.querySelector('.page-footer__our-office');
 
 var siteSectionsContainer = pageFooterContent.querySelector('.page-footer__site-section-container');
 var contactsContainer = pageFooterContent.querySelector('.page-footer__contacts');
@@ -115,8 +115,8 @@ var onContactsRender = function () {
 };
 
 
-siteSectionsButton.addEventListener('click', onSiteSectionsRender);
-contactsButton.addEventListener('click', onContactsRender);
+siteSections.addEventListener('click', onSiteSectionsRender);
+contacts.addEventListener('click', onContactsRender);
 
 // -----------------------------------------------------------------
 
