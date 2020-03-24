@@ -110,26 +110,12 @@
   background-position: center;
   background-size: 100%;
   fill: #00b2ff;
+
+  @media (max-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
 }
-
-// .page-header__menu {
-//   position: relative;
-//   flex-grow: 1;
-//   padding-left: 100px;
-//   cursor: pointer;
-
-//   @media (max-width: $tablet-width) {
-//     &::before {
-//       position: absolute;
-//       content: "";
-//       width: 37px;
-//       height: 1px;
-//       top: -4px;
-//       background-color: $white;
-//       box-shadow: 0 10px 0 0 $white;
-//     }
-//   }
-// }
 
 .page-header__link {
   position: relative;
