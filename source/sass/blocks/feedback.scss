@@ -27,7 +27,7 @@
 
 .feedback__container {
   position: relative;
-  width: 50%;
+  min-width: 570px;
 
   &::after {
     position: absolute;
@@ -64,7 +64,11 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: auto;
+    width: 590px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: auto;
   }
 }
 

@@ -8,8 +8,14 @@
   color: $white;
   z-index: 1;
 
+
   &--off {
     display: none;
+  }
+
+  @media (max-width: $mobile-width) {
+    left: 0;
+    width: auto;
   }
 }
 
