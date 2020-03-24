@@ -458,7 +458,6 @@ body {
 
     .page-header__nav-item:hover svg, .page-header__nav-item:focus svg {
         fill: #ffffff;
-        width: 40px;
     }
 }
 
@@ -502,6 +501,13 @@ body {
     background-position: center;
     background-size: 100%;
     fill: #00b2ff;
+}
+
+@media (max-width: 1023px) {
+    .page-header__pic {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 .page-header__link {
@@ -662,6 +668,7 @@ body {
 
 @media (max-width: 1023px) {
     .promo__headline {
+        width: 400px;
         white-space: normal;
         font-size: 60px;
         line-height: 70px;
