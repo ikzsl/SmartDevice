@@ -693,6 +693,7 @@ body {
     font-size: 22px;
     margin-left: 100px;
     margin-bottom: 46px;
+    max-width: 680px;
 }
 
 .promo__desc::before {
@@ -1162,7 +1163,6 @@ body {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     opacity: 0.2;
-    width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
 }
