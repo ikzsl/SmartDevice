@@ -31,6 +31,7 @@
 
 .form__agree-container {
   display: flex;
+  // justify-content: center;
   width: 48%;
   align-items: center;
 
@@ -113,12 +114,14 @@
 .form__agree {
   margin-right: 20px;
 
+
   @media (max-width: $mobile-width) {
     margin-right: 20px;
   }
 }
 
 .form__agree-label {
+  align-self: center;
   position: relative;
   font-size: 14px;
   line-height: 16px;
@@ -129,8 +132,8 @@
   &::before {
     position: absolute;
     content: "";
-    top: 2px;
-    left: 8px;
+    top: 0;
+    left: 0;
     width: 16px;
     height: 16px;
     border: 1px solid $white;
@@ -151,8 +154,8 @@ input:checked ~ .form__agree-label {
     border: 1px solid $white;
     position: absolute;
     content: "";
-    top: 5px;
-    left: 14px;
+    top: 4px;
+    left: 6px;
     width: 5px;
     height: 7px;
     border-left: none;
