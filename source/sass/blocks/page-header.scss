@@ -61,11 +61,31 @@
   @media (max-width: $tablet-width) {
     flex-grow: 0;
     margin-left: 20px;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+
+      & svg {
+        fill: $white;
+      }
+    }
   }
 }
 
 .page-header__nav-item-text {
   margin-left: 10px;
+
+  &:hover,
+  &:focus {
+    color: $text-footer;
+    text-decoration: underline;
+    // opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (max-width: $tablet-width) {
     // display: none;
@@ -120,17 +140,5 @@
   color: inherit;
   padding: 10px;
   transition: all 0.2s ease;
-
-  &:hover,
-  &:focus {
-    color: $bg-gray;
-
-    & svg {
-      fill: red;
-    }
-  }
-
-  &:active {
-    opacity: 0.7;
-  }
+  z-index: 1;
 }
