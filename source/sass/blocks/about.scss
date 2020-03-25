@@ -1,5 +1,5 @@
 .about {
-    // border: 1px solid red;
+  // border: 1px solid red;
   padding: 0 150px;
   padding-bottom: 110px;
 
@@ -52,6 +52,18 @@
   }
 }
 
+.about__description-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 310px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 350px;
+
+  }
+}
+
 .about__description-wrapper h2 {
   margin: 0;
   margin-bottom: 20px;
@@ -93,5 +105,5 @@
 }
 
 .about__button {
-  margin-top: 15px;
+  align-self: flex-start;
 }
