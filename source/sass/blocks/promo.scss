@@ -187,6 +187,7 @@
 
 .promo__action-text-desktop {
   display: inline;
+  text-shadow: 1px 1px #111111;
 
   @media (max-width: $mobile-width) {
     display: none;
