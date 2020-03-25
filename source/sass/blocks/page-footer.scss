@@ -1,13 +1,9 @@
 .page-footer {
   flex-shrink: 0;
-
-
   box-sizing: content-box;
   background-color: $bg-white;
-
   font-size: 15px;
   line-height: 25px;
-
   padding-top: 65px;
   color: $text-footer;
 
@@ -27,7 +23,6 @@
 .page-footer__copyright {
   max-width: 1410px;
   position: relative;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,11 +56,8 @@
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.04em;
-
   margin: 0;
   padding: 14px 0;
-
-
 }
 
 .page-footer__copyright a {
@@ -118,7 +110,6 @@
     flex-direction: row;
     align-items: center;
     padding-bottom: 22px;
-
     margin-bottom: 32px;
 
     &::before {
@@ -126,9 +117,7 @@
       content: "";
       background: #dbdbdb;
       bottom: 0;
-
       height: 1px;
-
       width: 300vw;
       /* включает в себя полосу прокрутки от body */
       margin-left: -100vw;
@@ -146,9 +135,7 @@
   // background-color: #cdcdcd;
   min-width: 216px;
   min-height: 52px;
-
 }
-
 
 .page-footer__logo-link {
   margin-bottom: 30px;
