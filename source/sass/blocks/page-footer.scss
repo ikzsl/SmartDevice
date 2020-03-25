@@ -187,7 +187,7 @@
   min-width: 50%;
 
   @media (max-width: $mobile-width) {
-    padding: 28px 0;
+    padding-top: 28px;
 
     &::before {
       position: absolute;
@@ -207,13 +207,13 @@
   position: relative;
 
   @media (max-width: $mobile-width) {
-    padding: 28px 0;
+    padding-top: 28px;
   }
 }
 
 .page-footer__headline {
   margin: 0;
-  // margin-bottom: 25px;
+  margin-bottom: 25px;
   font-family: $roboto;
   text-transform: uppercase;
   font-weight: normal;
@@ -222,7 +222,7 @@
   color: $bg-dark;
 
   @media (max-width: $mobile-width) {
-    margin: 0;
+    //margin: 0;
   }
 }
 
