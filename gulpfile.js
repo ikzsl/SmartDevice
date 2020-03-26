@@ -1,5 +1,6 @@
 "use strict";
 
+var concat = require('gulp-concat');
 var cssbeautify = require('gulp-cssbeautify');
 var ghPages = require('gh-pages');
 var path = require('path');
@@ -18,6 +19,12 @@ var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+
+gulp.task('scripts', function() {
+  return gulp.src(['source/js/focuslock.js', 'source/js/imask.js'])
+    .pipe(concat('vendor.js'))
+    .pipe(gulp.dest('build/js'));
+});
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -103,7 +110,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
+    "source/js/main.js",
     "source//*.ico"
   ], {
     base: "source"
@@ -119,5 +126,5 @@ gulp.task("deploy", function deploy(cb) {
   ghPages.publish(path.join(process.cwd(), './build'), cb);
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "css2", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "css2", "sprite", "html", "scripts"));
 gulp.task("start", gulp.series("build", "server"));
