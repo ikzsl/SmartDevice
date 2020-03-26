@@ -119,5 +119,3 @@ siteSections.addEventListener('click', onSiteSectionsRender);
 contacts.addEventListener('click', onContactsRender);
 
 // -----------------------------------------------------------------
-
-
