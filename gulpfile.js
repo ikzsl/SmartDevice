@@ -21,7 +21,7 @@ var include = require("posthtml-include");
 var del = require("del");
 
 gulp.task('scripts', function() {
-  return gulp.src(['source/js/focuslock.js', 'source/js/imask.js'])
+  return gulp.src('source/js/vendor/*.js')
     .pipe(concat('vendor.js'))
     .pipe(gulp.dest('build/js'));
 });
