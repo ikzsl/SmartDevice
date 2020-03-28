@@ -4,11 +4,11 @@
 var imask = window.IMask;
 
 imask(document.getElementById('modal-tel'), {
-  mask: '+{7}(000)000-00-00'
+  mask: '+{7}(000)000-00-00',
 });
 
 imask(document.getElementById('form-tel'), {
-  mask: '+{7}(000)000-00-00'
+  mask: '+{7}(000)000-00-00',
 });
 
 
@@ -82,7 +82,7 @@ var contactsContainer = contacts.querySelector('.page-footer__contacts');
 var isSiteSectionsUnrolled = false;
 var isContactsUnrolled = false;
 
-var onSiteSectionsRender = function () {
+var onSiteSectionsClick = function () {
   isSiteSectionsUnrolled = !isSiteSectionsUnrolled;
 
   if (isSiteSectionsUnrolled) {
@@ -97,7 +97,7 @@ var onSiteSectionsRender = function () {
   }
 };
 
-var onContactsRender = function () {
+var onContactsClick = function () {
   isContactsUnrolled = !isContactsUnrolled;
 
   if (isContactsUnrolled) {
@@ -112,8 +112,11 @@ var onContactsRender = function () {
   }
 };
 
-
-siteSections.addEventListener('click', onSiteSectionsRender);
-contacts.addEventListener('click', onContactsRender);
+if (siteSections) {
+  siteSections.addEventListener('click', onSiteSectionsClick);
+}
+if (contacts) {
+  contacts.addEventListener('click', onContactsClick);
+}
 
 // -----------------------------------------------------------------
