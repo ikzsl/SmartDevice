@@ -496,8 +496,11 @@ body {
     top: 0;
     width: 705px;
     height: 515px;
-    background-image: url("../img/pcb.png");
+    background-image: url("../img/pcb@1x.png");
     background-size: contain; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .promo__desc-wrapper::after {
+        background-image: url("../img/pcb@2x.png"); } }
   .promo__desc-wrapper::before {
     position: absolute;
     content: "";
@@ -776,9 +779,12 @@ body {
     left: 0;
     width: 170px;
     height: 310px;
-    background-image: url("../img/2005.png");
+    background-image: url("../img/2005@1x.png");
     background-size: contain;
     background-repeat: no-repeat; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .about__wrapper::before {
+        background-image: url("../img/2005@2x.png"); } }
     @media (max-width: 1023px) {
       .about__wrapper::before {
         min-width: 180px;
@@ -1024,10 +1030,13 @@ body {
     top: 80px;
     width: 510px;
     height: 250px;
-    background-image: url("../img/airplane.png");
+    background-image: url("../img/airplane@1x.png");
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 0; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .feedback__container::after {
+        background-image: url("../img/airplane@2x.png"); } }
     @media (max-width: 1023px) {
       .feedback__container::after {
         display: none; } }
