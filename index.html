@@ -197,22 +197,25 @@
           <div class="feedback__container">
             <h2>Остались вопросы? Задайте их нам!</h2>
             <p>Мы проконсультируем Вас бесплатно</p>
-            <form class="feedback__form form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST" id="feedback-form">
-              <div class="form__container">
-                <label class="visually-hidden" for="form-name">Введите имя</label>
-                <input type="text" name="name" id="form-name" placeholder="Имя" class="form__text-input" required="">
-                <label class="visually-hidden" for="form-tel">Введите номер телефона</label>
-                <input type="tel" name="tel" id="form-tel" placeholder="Телефон" class="form__text-input" required="">
-              </div>
-              <label class="visually-hidden" for="form-message">Введите ваш вопрос</label>
+            <form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST" id="feedback-form">
+
+              <input type="text" name="name" id="form-name" placeholder="Имя" class="form__text-input" required="">
+              <label for="form-name">Введите имя</label>
+
+
+              <input type="tel" name="tel" id="form-tel" placeholder="Телефон" class="form__text-input" required="">
+              <label for="form-tel">Введите номер телефона</label>
+
+
               <textarea name="text" rows="4" id="form-message" placeholder="Ваш вопрос" class="form__text-area" required=""></textarea>
-              <div class="form__submit-container">
-                <button type="submit" class="form__submit button button--submit">Задать вопрос</button>
-                <div class="form__agree-container">
-                  <input type="checkbox" name="agree" id="form-agree" class="visually-hidden" required="">
-                  <label class="form__agree-label" for="form-agree">Я согласен на обработку персональных данных</label>
-                </div>
-              </div>
+              <label for="form-message">Введите ваш вопрос</label>
+
+              <button type="submit">Задать вопрос</button>
+
+              <input type="checkbox" name="agree" id="form-agree" required="">
+              <label for="form-agree">Я согласен на обработку персональных данных</label>
+
+
             </form>
           </div>
         </div>
@@ -310,21 +313,23 @@
         <h2 class="modal-feedback__headline">Закажите звонок</h2>
         <p class="modal-feedback__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <form class="modal-feedback__form form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
-          <div class="form__container form__container--modal">
-            <label class="visually-hidden" for="modal-name">Введите имя</label>
-            <input type="text" name="name" id="modal-name" placeholder="Имя" required="">
-            <label class="visually-hidden" for="modal-tel">Введите номер телефона</label>
-            <input type="tel" name="tel" id="modal-tel" placeholder="Телефон" required="">
-          </div>
-          <label class="visually-hidden" for="modal-message">Введите ваш вопрос</label>
-          <textarea name="text" rows="4" id="modal-message" placeholder="Ваш вопрос" class="form__text-area" required=""></textarea>
-          <div class="form__submit-container form__submit-container--modal">
-            <button type="submit" class="form__submit form__submit--modal button button--submit">Отправить</button>
-            <div class="form__agree-container form__agree-container--modal">
-              <input type="checkbox" name="agree" id="modal-agree" class="visually-hidden" required="">
-              <label class="form__agree-label" for="modal-agree">Я согласен на обработку персональных данных</label>
-            </div>
-          </div>
+
+
+          <input type="text" name="name" id="modal-name" placeholder="Имя" required="">
+          <label for="modal-name">Введите имя</label>
+
+          <input type="tel" name="tel" id="modal-tel" placeholder="Телефон" required="">
+          <label for="modal-tel">Введите номер телефона</label>
+
+          <textarea name="text" rows="4" id="modal-message" placeholder="Ваш вопрос" required=""></textarea>
+          <label for="modal-message">Введите ваш вопрос</label>
+
+          <button type="submit">Отправить</button>
+
+          <input type="checkbox" name="agree" id="modal-agree" required="">
+          <label for="modal-agree">Я согласен на обработку персональных данных</label>
+
+
         </form>
       </div>
     </div>
