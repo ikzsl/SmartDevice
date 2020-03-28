@@ -1,7 +1,6 @@
 "use strict";
 
 var concat = require('gulp-concat');
-var cssbeautify = require('gulp-cssbeautify');
 var ghPages = require('gh-pages');
 var path = require('path');
 var gulp = require("gulp");
@@ -34,23 +33,12 @@ gulp.task("css", function () {
       includePaths: require("node-normalize-scss").includePaths
     }))
     .pipe(postcss([autoprefixer()]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
-});
-
-gulp.task("css2", function () {
-  return gulp.src("source/sass/style.scss")
-    .pipe(plumber())
-    .pipe(sass({
-      includePaths: require("node-normalize-scss").includePaths
-    }))
-    .pipe(postcss([autoprefixer()]))
-    .pipe(cssbeautify())
-    .pipe(rename("style.css"))
-    .pipe(gulp.dest("build/css"))
 });
 
 gulp.task("server", function () {
@@ -126,5 +114,5 @@ gulp.task("deploy", function deploy(cb) {
   ghPages.publish(path.join(process.cwd(), './build'), cb);
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "css2", "sprite", "html", "scripts"));
+gulp.task("build", gulp.series("clean", "copy", "css",  "sprite", "html", "scripts"));
 gulp.task("start", gulp.series("build", "server"));
