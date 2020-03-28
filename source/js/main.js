@@ -72,13 +72,11 @@ focusLock.off(modalCloseButton);
 
 // -------------------accordeon-----------------------------------------
 
-var pageFooterContent = document.querySelector('.page-footer__content-wrapper');
+var siteSections = document.querySelector('.page-footer__site-sections');
+var contacts = document.querySelector('.page-footer__our-office');
 
-var siteSections = pageFooterContent.querySelector('.page-footer__site-sections');
-var contacts = pageFooterContent.querySelector('.page-footer__our-office');
-
-var siteSectionsContainer = pageFooterContent.querySelector('.page-footer__site-section-container');
-var contactsContainer = pageFooterContent.querySelector('.page-footer__contacts');
+var siteSectionsContainer = siteSections.querySelector('.page-footer__site-section-container');
+var contactsContainer = contacts.querySelector('.page-footer__contacts');
 
 
 var isSiteSectionsUnrolled = false;

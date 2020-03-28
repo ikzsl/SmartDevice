@@ -83,13 +83,20 @@
 }
 
 .page-footer__main {
+  justify-content: space-between;
   display: flex;
+
   max-width: 1410px;
-  padding: 0 50px;
-  padding-bottom: 25px;
+  padding: 0 50px 25px;
   margin: 0 auto;
 
+
   @media (max-width: $tablet-width) {
+    padding: 0 50px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $mobile-width) {
     flex-direction: column;
     padding: 0 25px;
   }
@@ -100,10 +107,11 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  flex-grow: 1;
+  flex-grow: 0;
   font-size: 13px;
   line-height: 24px;
   text-transform: uppercase;
+  margin-right: 20px;
 
   @media (max-width: $tablet-width) {
     justify-content: space-between;
@@ -111,6 +119,8 @@
     align-items: center;
     padding-bottom: 22px;
     margin-bottom: 32px;
+    margin-right: 0;
+    width: 100%;
 
     &::before {
       position: absolute;
@@ -119,7 +129,6 @@
       bottom: 0;
       height: 1px;
       width: 300vw;
-      /* включает в себя полосу прокрутки от body */
       margin-left: -100vw;
     }
   }
@@ -132,14 +141,11 @@
 }
 
 .page-footer__logo {
-  // background-color: #cdcdcd;
   min-width: 216px;
   min-height: 52px;
 }
 
 .page-footer__logo-link {
-  margin-bottom: 30px;
-
   @media (max-width: $mobile-width) {
     margin-bottom: 26px;
   }
@@ -161,7 +167,6 @@
 .page-footer__content-wrapper {
   display: flex;
   justify-content: space-between;
-
   flex-grow: 2;
 
   @media (max-width: $mobile-width) {
@@ -171,11 +176,13 @@
 
 .page-footer__site-sections {
   position: relative;
+  flex-wrap: wrap;
   width: 50%;
+
 
   @media (max-width: $mobile-width) {
     padding-top: 28px;
-    width: auto;
+    width: 100%;
 
     &::before {
       position: absolute;
@@ -190,12 +197,18 @@
   }
 }
 
+
 .page-footer__our-office {
   margin: 0;
   position: relative;
 
+  @media (max-width: $tablet-width) {
+    width: 50%;
+  }
+
   @media (max-width: $mobile-width) {
     padding-top: 28px;
+    width: 100%;
   }
 }
 
@@ -210,16 +223,26 @@
   color: $bg-dark;
 
   @media (max-width: $mobile-width) {
-    //margin: 0;
+    // margin: 0;
   }
 }
 
 .page-footer__site-section-list {
+
+  padding: 0;
+  margin: 25px 0;
   margin-top: 25px;
+  max-height: 120px;
+
+
+  @media (max-width: $tablet-width) {
+    max-height: none;
+    width: 50%;
+  }
 }
 
 .page-footer__contacts {
-  margin: 0;
+  margin: 25px 0;
   display: flex;
   flex-direction: column;
   padding-top: 25px;
