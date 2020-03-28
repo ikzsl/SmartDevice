@@ -1506,13 +1506,13 @@ body {
     display: -ms-flexbox;
     display: flex;
     max-width: 1410px;
-    padding: 0 50px;
-    padding-bottom: 25px;
+    padding: 0 50px 25px;
     margin: 0 auto;
 }
 
 @media (max-width: 1023px) {
     .page-footer__main {
+        padding: 0 50px;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
@@ -1574,7 +1574,6 @@ body {
         bottom: 0;
         height: 1px;
         width: 300vw;
-        /* включает в себя полосу прокрутки от body */
         margin-left: -100vw;
     }
 }
@@ -1593,10 +1592,6 @@ body {
 .page-footer__logo {
     min-width: 216px;
     min-height: 52px;
-}
-
-.page-footer__logo-link {
-    margin-bottom: 30px;
 }
 
 @media (max-width: 767px) {
