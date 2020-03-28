@@ -7,6 +7,7 @@
   text-align: center;
   text-transform: uppercase;
   font-family: $roboto;
+  font-weight: bold;
 
   font-size: 16px;
   line-height: 20px;
@@ -68,7 +69,6 @@
     color: $bg-blue;
     font-size: 14px;
     line-height: 16px;
-    font-weight: normal;
     letter-spacing: 0.05em;
     min-width: 180px;
     transition: all 0.2s ease;
