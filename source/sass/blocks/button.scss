@@ -83,25 +83,4 @@
       opacity: 0.7;
     }
   }
-
-  &--submit {
-    border: 1px solid #ffffff;
-    background-color: $bg-blue;
-    color: $white;
-
-    font-size: 14px;
-    line-height: 16px;
-
-    transition: all 0.2s ease;
-
-    &:hover,
-    &:focus {
-      background-color: $white;
-      color: $bg-blue;
-    }
-
-    &:active {
-      opacity: 0.7;
-    }
-  }
 }

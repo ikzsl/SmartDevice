@@ -8,7 +8,6 @@
   color: $white;
   z-index: 1;
 
-
   &--off {
     display: none;
   }
@@ -19,20 +18,60 @@
   }
 }
 
-.modal-feedback__wrapper {
-  max-width: 1170px;
-  margin: 0 auto;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+.modal-feedback input[type="text"] {
+  width: 100%;
+  margin-bottom: 30px;
 }
 
-.modal-feedback__container {
-  position: relative;
+.modal-feedback input[type="tel"] {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.modal-feedback textarea {
+  margin-bottom: 30px;
+  height: 104px;
+}
+
+.modal-feedback button[type="submit"] {
+  width: 100%;
+}
+
+.modal-feedback input[type="checkbox"] ~ label {
+  width: 100%;
+  padding-left: 50px;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $white;
+  }
+
+  &:hover::before,
+  &:hover::before {
+    box-shadow: 0 0 2px 2px $white;
+  }
+}
+
+.modal-feedback input[type="checkbox"]:checked ~ label {
+  float: right;
+
+  &::after {
+    left: 4px;
+  }
 }
 
 .modal-feedback__headline {
   margin: 0;
+  margin-bottom: 10px;
   font-weight: normal;
   font-family: $roboto;
   font-size: 28px;
@@ -41,7 +80,7 @@
 
 .modal-feedback__description {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 22px;
 }
