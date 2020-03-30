@@ -44,29 +44,6 @@
   @media (max-width: $mobile-width) {
     width: 100%;
   }
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    border: 1px solid $white;
-  }
-
-  &:hover::before,
-  &:hover::before {
-    box-shadow: 0 0 2px 2px $white;
-  }
-}
-
-.modal-feedback input[type="checkbox"]:checked ~ label {
-  float: right;
-
-  &::after {
-    left: 4px;
-  }
 }
 
 .modal-feedback__headline {

@@ -1,9 +1,11 @@
-form {
-  float: right;
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 
-input {
+.form input {
   width: 270px;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
@@ -30,27 +32,24 @@ input {
   }
 }
 
-input[type="text"] + label,
-input[type="tel"] + label,
-textarea + label {
+.form input[type="text"] + label,
+.form input[type="tel"] + label,
+.form textarea + label {
   @include visually-hidden;
 }
 
-input[type="text"] {
-  width: 45%;
+.form input[type="text"] {
+  width: 47%;
 
   @media (max-width: $mobile-width) {
-    float: none;
     width: 100%;
   }
 }
 
-input[type="tel"] {
-  float: right;
-  width: 45%;
+.form input[type="tel"] {
+  width: 47%;
 
   @media (max-width: $mobile-width) {
-    float: none;
     width: 100%;
   }
 }
@@ -60,7 +59,7 @@ input[type="tel"] {
   margin-bottom: 30px;
 }
 
-textarea {
+.form textarea {
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   padding: 15px;
@@ -81,7 +80,7 @@ textarea {
   }
 }
 
-button[type="submit"] {
+.form button[type="submit"] {
   padding: 14px 25px;
   border-radius: 5px;
   background-color: transparent;
@@ -91,9 +90,7 @@ button[type="submit"] {
   font-family: $roboto;
   font-weight: bold;
   margin-bottom: 30px;
-  width: 45%;
-  float: left;
-
+  width: 47%;
 
   cursor: pointer;
   border: 1px solid #ffffff;
@@ -119,29 +116,20 @@ button[type="submit"] {
   }
 }
 
-input[type="checkbox"] {
+.form input[type="checkbox"] {
   @include visually-hidden;
-  // margin-right: 20px;
-
-  @media (max-width: $mobile-width) {
-    // margin-right: 20px;
-  }
 }
 
-input[type="checkbox"] ~ label {
+.form input[type="checkbox"] ~ label {
   display: block;
   position: relative;
   font-size: 14px;
   line-height: 16px;
   padding-left: 30px;
   margin-top: 10px;
-  margin-left: 20px;
   color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
-
-  width: 45%;
-
-  float: right;
+  width: 47%;
 
   @media (max-width: $mobile-width) {
     width: 100%;
@@ -163,17 +151,17 @@ input[type="checkbox"] ~ label {
   }
 }
 
-input[type="checkbox"]:focus ~ label::before {
+.form input[type="checkbox"]:focus ~ label::before {
   box-shadow: 0 0 2px 2px $white;
 }
 
-input[type="checkbox"]:checked ~ label {
+.form input[type="checkbox"]:checked ~ label {
   &::after {
     border: 1px solid $white;
     position: absolute;
     content: "";
     top: 4px;
-    left: 4px;
+    left: 5px;
     width: 5px;
     height: 7px;
     border-left: none;
