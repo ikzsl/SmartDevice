@@ -1379,10 +1379,17 @@ body {
     .button--about:active {
       opacity: 0.7; }
 
-form {
-  float: right; }
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
-input {
+.form input {
   width: 270px;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
@@ -1390,21 +1397,21 @@ input {
   margin-bottom: 40px;
   color: #ffffff; }
   @media (max-width: 1023px) {
-    input {
+    .form input {
       min-width: 280px; } }
   @media (max-width: 767px) {
-    input {
+    .form input {
       margin-bottom: 30px; } }
-  input::-webkit-input-placeholder {
+  .form input::-webkit-input-placeholder {
     color: #ffffff;
     opacity: 1; }
-  input::-moz-placeholder {
+  .form input::-moz-placeholder {
     color: #ffffff;
     opacity: 1; }
 
-input[type="text"] + label,
-input[type="tel"] + label,
-textarea + label {
+.form input[type="text"] + label,
+.form input[type="tel"] + label,
+.form textarea + label {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -1417,26 +1424,23 @@ textarea + label {
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%); }
 
-input[type="text"] {
-  width: 45%; }
+.form input[type="text"] {
+  width: 47%; }
   @media (max-width: 767px) {
-    input[type="text"] {
-      float: none;
+    .form input[type="text"] {
       width: 100%; } }
 
-input[type="tel"] {
-  float: right;
-  width: 45%; }
+.form input[type="tel"] {
+  width: 47%; }
   @media (max-width: 767px) {
-    input[type="tel"] {
-      float: none;
+    .form input[type="tel"] {
       width: 100%; } }
 
 .form__container--modal input {
   width: auto;
   margin-bottom: 30px; }
 
-textarea {
+.form textarea {
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   padding: 15px;
@@ -1445,14 +1449,14 @@ textarea {
   color: #ffffff;
   width: 100%;
   height: 154px; }
-  textarea::-webkit-input-placeholder {
+  .form textarea::-webkit-input-placeholder {
     color: #ffffff;
     opacity: 1; }
-  textarea::-moz-placeholder {
+  .form textarea::-moz-placeholder {
     color: #ffffff;
     opacity: 1; }
 
-button[type="submit"] {
+.form button[type="submit"] {
   padding: 14px 25px;
   border-radius: 5px;
   background-color: transparent;
@@ -1462,8 +1466,7 @@ button[type="submit"] {
   font-family: "roboto-condensed", "Arial", sans-serif;
   font-weight: bold;
   margin-bottom: 30px;
-  width: 45%;
-  float: left;
+  width: 47%;
   cursor: pointer;
   border: 1px solid #ffffff;
   color: #ffffff;
@@ -1472,17 +1475,17 @@ button[type="submit"] {
   letter-spacing: 0.05em;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease; }
-  button[type="submit"]:hover, button[type="submit"]:focus {
+  .form button[type="submit"]:hover, .form button[type="submit"]:focus {
     background-color: #ffffff;
     color: #00b2ff; }
-  button[type="submit"]:active {
+  .form button[type="submit"]:active {
     opacity: 0.7; }
   @media (max-width: 767px) {
-    button[type="submit"] {
+    .form button[type="submit"] {
       margin-bottom: 30px;
       width: 100%; } }
 
-input[type="checkbox"] {
+.form input[type="checkbox"] {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -1495,22 +1498,20 @@ input[type="checkbox"] {
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%); }
 
-input[type="checkbox"] ~ label {
+.form input[type="checkbox"] ~ label {
   display: block;
   position: relative;
   font-size: 14px;
   line-height: 16px;
   padding-left: 30px;
   margin-top: 10px;
-  margin-left: 20px;
   color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
-  width: 45%;
-  float: right; }
+  width: 47%; }
   @media (max-width: 767px) {
-    input[type="checkbox"] ~ label {
+    .form input[type="checkbox"] ~ label {
       width: 100%; } }
-  input[type="checkbox"] ~ label::before {
+  .form input[type="checkbox"] ~ label::before {
     position: absolute;
     content: "";
     top: 0;
@@ -1518,20 +1519,20 @@ input[type="checkbox"] ~ label {
     width: 16px;
     height: 16px;
     border: 1px solid #ffffff; }
-  input[type="checkbox"] ~ label:hover::before, input[type="checkbox"] ~ label:hover::before {
+  .form input[type="checkbox"] ~ label:hover::before, .form input[type="checkbox"] ~ label:hover::before {
     -webkit-box-shadow: 0 0 2px 2px #ffffff;
             box-shadow: 0 0 2px 2px #ffffff; }
 
-input[type="checkbox"]:focus ~ label::before {
+.form input[type="checkbox"]:focus ~ label::before {
   -webkit-box-shadow: 0 0 2px 2px #ffffff;
           box-shadow: 0 0 2px 2px #ffffff; }
 
-input[type="checkbox"]:checked ~ label::after {
+.form input[type="checkbox"]:checked ~ label::after {
   border: 1px solid #ffffff;
   position: absolute;
   content: "";
   top: 4px;
-  left: 4px;
+  left: 5px;
   width: 5px;
   height: 7px;
   border-left: none;
@@ -1684,22 +1685,6 @@ input[type="checkbox"]:checked ~ label::after {
   @media (max-width: 767px) {
     .modal-feedback input[type="checkbox"] ~ label {
       width: 100%; } }
-  .modal-feedback input[type="checkbox"] ~ label::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    border: 1px solid #ffffff; }
-  .modal-feedback input[type="checkbox"] ~ label:hover::before, .modal-feedback input[type="checkbox"] ~ label:hover::before {
-    -webkit-box-shadow: 0 0 2px 2px #ffffff;
-            box-shadow: 0 0 2px 2px #ffffff; }
-
-.modal-feedback input[type="checkbox"]:checked ~ label {
-  float: right; }
-  .modal-feedback input[type="checkbox"]:checked ~ label::after {
-    left: 4px; }
 
 .modal-feedback__headline {
   margin: 0;
