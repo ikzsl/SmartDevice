@@ -146,6 +146,12 @@
 }
 
 .page-footer__logo-link {
+  margin-bottom: 50px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
   @media (max-width: $mobile-width) {
     margin-bottom: 26px;
   }
