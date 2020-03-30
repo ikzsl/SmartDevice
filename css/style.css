@@ -498,7 +498,7 @@ body {
     height: 515px;
     background-image: url("../img/pcb@1x.png");
     background-size: contain; }
-    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
       .promo__desc-wrapper::after {
         background-image: url("../img/pcb@2x.png"); } }
   .promo__desc-wrapper::before {
@@ -782,7 +782,7 @@ body {
     background-image: url("../img/2005@1x.png");
     background-size: contain;
     background-repeat: no-repeat; }
-    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
       .about__wrapper::before {
         background-image: url("../img/2005@2x.png"); } }
     @media (max-width: 1023px) {
@@ -1159,9 +1159,14 @@ body {
   min-width: 216px;
   min-height: 52px; }
 
-@media (max-width: 767px) {
-  .page-footer__logo-link {
-    margin-bottom: 26px; } }
+.page-footer__logo-link {
+  margin-bottom: 50px; }
+  @media (max-width: 1023px) {
+    .page-footer__logo-link {
+      margin-bottom: 0; } }
+  @media (max-width: 767px) {
+    .page-footer__logo-link {
+      margin-bottom: 26px; } }
 
 .page-footer__copyright-social {
   display: none; }
@@ -1461,7 +1466,6 @@ button[type="submit"] {
   float: left;
   cursor: pointer;
   border: 1px solid #ffffff;
-  background-color: #00b2ff;
   color: #ffffff;
   font-size: 14px;
   line-height: 16px;
@@ -1510,7 +1514,7 @@ input[type="checkbox"] ~ label {
     position: absolute;
     content: "";
     top: 0;
-    left: 0px;
+    left: 0;
     width: 16px;
     height: 16px;
     border: 1px solid #ffffff; }
@@ -1583,7 +1587,7 @@ input[type="checkbox"]:checked ~ label::after {
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 0; }
-    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
       .feedback__container::after {
         background-image: url("../img/airplane@2x.png"); } }
     @media (max-width: 1023px) {
