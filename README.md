@@ -1,3 +1,4 @@
+## [Smart Device](https://ikzsl.github.io/SmartDevice/)
 # Gulp template Liga A
 ## Краткая инструкция по работе
 ### Для начала работы у вас должент быть установлен:
